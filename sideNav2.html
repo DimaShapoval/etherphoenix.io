@@ -1,0 +1,262 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Figma</title>
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="dark-mode.css">
+
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+
+    @supports (font-variation-settings: normal) {
+      html {
+        font-family: 'Inter var', sans-serif;
+      }
+    }
+
+    body {
+      width: 100%;
+    }
+  </style>
+
+</head>
+  <body>
+<div id="mySidenav" class="sidenav sidenavformobile-active">
+      <div class='container'>
+        <div class='row ' style='height: 125px'>
+          <div class='col-4 d-flex justify-content-center'>
+            <label class="custom-control-label  theme-button" style="width: 28px;height: 28px;margin-top: 3.5em;"
+              for="darkSwitch" id="theme-button-1" width='33' height='44'> </label>
+            <!-- <img style="width: 28px;height: 28px;margin-top: 3.5em;" class="theme-button"  for="darkSwitch" id="theme-button-1" width='33' height='44'> -->
+            <!--             src="photo/Moonforside.png" -->
+          </div>
+          <div class='col-4 d-flex justify-content-center'>
+            <img class="" src="photo/Etherforsidenav.png">
+          </div>
+          <div class='col-4  d-flex justify-content-center'>
+            <div class="buttonsliderMobile mt-5">
+              <a class="navbar-toggler buttonslider" type="button" data-mdb-toggle="collapse"
+                id="nav-back" href="index2.html" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style='    width: 44px;
+    height: 44px;'>
+                <i style="color:#D2D2F9" class="fas fa-bars"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row mt-5">
+            <div id="text-for-upper" class="col-4 d-flex justify-content-center second-nav-text">ETHER PRICE </div>
+            <div id="text-for-upper" class="col-4 d-flex justify-content-center second-nav-text">MED GAS PRICE<br></div>
+            <div id="text-for-upper" class="col-4 d-flex justify-content-center second-nav-text">MARKET CAP</div>
+          </div>
+          <div class="row ">
+            <div id="text-for-bottom" class="col-4 d-flex justify-content-center ">ETHER PRICE </div>
+            <div id="text-for-bottom" class="col-4 d-flex justify-content-center ">MED GAS PRICE</div>
+            <div id="text-for-bottom" class="col-4 d-flex justify-content-center">MARKET CAP</div>
+          </div>
+        </div>
+        <div style="height:200px; width: calc(100%);
+    /* position: absolute; */
+    background-color: #FFF;" id="chart-1">
+          <canvas id="myChart1"></canvas>
+        </div>
+
+      </div>
+      <footer class="text-center text-lg-start mt-5 " id="footMobile">
+        <div class="bottomnavbar">
+          <div class="navbar navbar-expand-lg " style="height: 165px;" id="footershadow">
+
+            <div class="container-fluid" style="justify-content:center;margin-bottom:20px;">
+              <button type="button" class="btn btn-outline-light "
+                style="color:#FFFFFF;background-color:#D2D2F9;width:65%;border:none;height:4em;margin:20px; ">
+                <a type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style="color:#FFFFFF;font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;">Staking launpad</a>
+              </button>
+            </div>
+            <div class="container-fluid justify-content-center ">
+              <a style="color:#FFFFFF;margin-left: 2.5%;margin-right: 9px;" href="https://twitter.com/etherphoenlx"
+                target="_blank"><img src="photo/TwitterMobileLight.png"></a>
+
+              <a
+                style="color:#FFFFFF;padding-right: 5%;margin-left: 5%;padding-left: 5%;border-left: 1px solid #787878;border-right: 1px solid #787878;href='#'"><img
+                  src="photo/YoutubeLogoMobileLight.png"></a>
+
+              <a style="color:#FFFFFF;" href='https://medium.com/@etherphoenix' target="_blank"><img
+                  style="width: 50px;" src="photo/Mediuym.svg"></a>
+            </div>
+          </div>
+          <div class="container-fluid leftFooter"
+            style="display:flex;flex-direction:column;padding-top: 2%;padding-bottom: 6%;">
+            <a class="footerA footerA1" style="color:#787878;margin-bottom:6px;margin-top:9px;"
+              href="indexFAQ.html">FAQ</a>
+            <div class="linefooter footerA2"></div>
+            <a class="footerA" style="color:#787878;margin-bottom:6px;margin-top:6px;" href="indexJobs.html">Jobs</a>
+            <div class="linefooter"></div>
+            <a class="footerA footerA3" style="color:#787878;text-align: center;margin-top:6px;" type="button"
+              href="index2.html">Terms of Service</a>
+
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    const navsecondButton = document.getElementById('nav-back');
+    const secondButtonTheme = document.getElementById('theme-button-1');
+
+    let USD = []
+    // const dailyProfit = document.getElementById('daily-profit');
+
+    fetch('https://min-api.cryptocompare.com/data/v2/histoday?fsym=ETH&tsym=USD&limit=6&aggregate=3&e=Kraken&extraParams=your_app_name')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        //     import {customValue} from "./style.js"
+        // console.log(customValue)
+        for (let i = 0; i < 7; i++) {
+
+          USD[i] = data.Data.Data[i].close;
+          //console.log(data.Data.Data[i])
+        }
+        // console.log(data.Data.Data)
+        console.log(USD)
+        const labels = [
+          'aug 19',
+          '',
+          '',
+          'Aug 26',
+          '',
+          '',
+          'Sep 2',
+        ];
+        console.log(USD[0]);
+        const dataf = {
+          labels: labels,
+          datasets: [{
+            label: 'ETHEREUM TRANSACTION HISTORY IN 14 DAYS',
+            backgroundColor: '#2FDF2C',
+            borderColor: '#2FDF2C',
+            data: [USD[0], USD[1], USD[2], USD[3], USD[4], USD[5], USD[6]],
+            tension: 0.5,
+          }]
+        };
+
+        const config = {
+          type: 'line',
+          data: dataf,
+          options: {}
+        };
+        const dataf2 = {
+          datasets: [{
+            label: '',
+            backgroundColor: ["#8C8CF5", '#40FF3D'],
+            borderColor: [' rgba(0, 0, 0, 0)'],
+            borderWidth: 20,
+
+
+            data: [70, 30],
+            // tension: 0.5,
+          }]
+        };
+        const config2 = {
+          type: 'doughnut',
+          data: dataf2,
+
+          options: {}
+        }
+        const myChart = new Chart(
+          document.getElementById('myChart'),
+          config
+        );
+        const myChart1 = new Chart(
+          document.getElementById('myChart1'),
+          config
+        );
+        const myChart2 = new Chart(
+
+          document.getElementById('myChart2'),
+          config2
+        )
+        console.log(myChart2.value)
+      })
+    const bodyBody = document.getElementById('body')
+    const a = document.getElementById('grafic1')
+    if (document.documentElement.clientWidth < 708) {
+      a.style.width = "234px"
+      a.style.left = "0%"
+
+
+    }
+    if (bodyBody.classlist == 'dark-theme') {
+      a.style.borderColor = '#1E1E1E'
+    }
+    secondButtonTheme.addEventListener('click',function(){
+  bgImg.classList.toggle('bg-img');
+  bgImg.classList.toggle('bg-img-dark');
+  // secondBodyTheme.classList.toggle('light-theme');
+  // secondBodyTheme.classList.toggle('dark-theme');
+  boxShadow.classList.toggle('dark-box-shadow');
+  darkBox.classList.toggle('dark-box');
+  darkBox.classList.toggle('dark-box-dark');
+  darkBox1.classList.toggle('navbar-dark');
+  secondShadow.classList.toggle('ether_box2-dark')
+  darkBox2.classList.toggle('dark-box');
+  darkBox2.classList.toggle('dark-box-dark');
+  darkBox5.classList.toggle('dark-box');
+  darkBox5.classList.toggle('dark-box-dark');
+  launchButton.classList.toggle('launch-app-button-dark');
+  secondButtonTheme.classList.toggle('theme-button')
+  secondButtonTheme.classList.toggle('sun-button')
+  bodyTheme.classList.toggle('light-theme');
+   bodyTheme.classList.toggle('dark-theme');
+  if(bodyTheme.classList == 'dark-theme'){
+    chart1.style.backgroundColor = '#222222'
+    secondNavText[0].style.color = "#fff"
+    secondNavText[1].style.color = "#fff"
+    secondNavText[2].style.color = "#fff"
+    footerShadow.style.backgroundColor = "#222222"
+    // fifthButton.style.color = "#787878"
+    // fifthButton.style.backgroundColor = "#FFAB7C"
+    
+    
+  }
+  else{
+    chart1.style.backgroundColor = '#fff'
+    secondNavText[0].style.color = ""
+    secondNavText[1].style.color = ""
+    secondNavText[2].style.color = ""
+    footerShadow.style.backgroundColor = ""
+  }
+})
+    
+    navsecondButton.addEventListener('click', function(){
+    window.location.href = 'index2.html';
+  })
+
+  </script>
+    <script src="js/styles.js"></script>
+    </body>
+</html>

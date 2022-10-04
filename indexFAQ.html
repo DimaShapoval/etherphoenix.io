@@ -1,0 +1,3026 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Figma</title>
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+
+        html {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @supports (font-variation-settings: normal) {
+            html {
+                font-family: 'Inter var', sans-serif;
+            }
+        }
+
+        body {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+
+<body class='light-theme' id='body'>
+
+    <nav class="navbar navbar-expand-lg fixed-top " id="nav-third" style="position: fixed;">
+        <div class="container " style="max-width:40em;display:flex;justify-content: center;">
+            <a class="navbar-brand" type="button" style="margin-left: 5%;" href="index.html"><img
+                    src="photo/Group 9.png" alt=""></a>
+<!--             <a class="navbar-toggler" id="nav-second-button" type="button" data-mdb-toggle="collapse"
+                href="sideNavFAQ.html" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i style="color:#D2D2F9" class="fas fa-bars"></i>
+            </a> -->
+            <div class="collapse navbar-collapse " id="navbar-supported-content">
+
+
+                <div class="Ether_price " style="border-right:1px solid;padding-right:5%; ">
+                    <span id="ether_price" class="" style="padding:0%;">ETHER PRICE</span>
+                    <div class="text_ether_price_bottom">
+                        <span class="navbar-text" id="ether_price_bottom">ETHER PRICE</span>
+                    </div>
+                </div>
+
+
+
+                <div class="text_MAD_GAS_PRICE" style="border-right:1px solid;padding-right:5%;">
+                    <span id="MAD_GAS_PRICE" style="padding:0%;">MAD GAS PRICE</span>
+                    <div class="text_MAD_GAS_PRICE_bottom">
+                        <span class="navbar-text" id="MAD_GAS_PRICE_bottom">MAD GAS PRICE </span>
+                    </div>
+                </div>
+
+                <div class="text_market_cup">
+                    <span id="market_cup">MARKET CUP </span>
+                    <div class="text_market_cup_bottom">
+                        <span class="navbar-text" id="market_cup_bottom">MARKET CUP </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-end" style="display:contents">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container-fluid row align-items-center justify-content-end"
+                    style="vertical-align: middle; ">
+                    <form class="col-5 search-wrapper" style="margin-top: 1em;justify-content: flex-end;">
+                         <div id="wallet-for-m4"><button onclick="window.location.href='https://etherphoenix.io/index.html#no-back2';" id="wallet-button-FAQ" class="wallet-button" style="border: 1px solid rgb(120, 120, 120); border-radius: 3px; height: 3em; width: 14em; background: rgb(210, 210, 249);"><a href="https://etherphoenix.io/index.html#no-back2"style=" color:#fff;font-family: Inter; font-style: normal; font-weight: 600; font-size: 14px;">Wallet</a></button></div>
+                    </form>
+
+                        <div class="nav-link col-2 d-flex" style="justify-content: flex-end;"><label
+                                class="custom-control-label theme-button" for="darkSwitch" id="theme-button"
+                                "> </label></div>
+                  
+                        <a class="nav-link col-3 d-flex" type="button"onclick="openNav()"
+                        style="justify-content: flex-end;width:100;margin-left: 2%;"><img
+                                src="photo/Globe.png" id="globe">Languages</a>
+                </div>
+            </div>
+        </div>
+      
+          
+        </div>
+      </div>
+      
+     
+    </nav>
+    <div class="container-fluid ">
+        <div class="bg_terms_modal_main" id="bg-terms">
+            <div class="container-fluid" style="margin-left: 0.4%;padding-bottom: 157px;" id="main-text">
+
+                <div class="terms_of_use_text" id="terms_of_use_text">
+                    <h1 style="font-family: 'Inter';font-weight: bold;">Validator FAQs</h1>
+                </div>
+                <div>
+                    <p style="font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    margin-left: 8%;
+                    padding-bottom: 2%;
+                    border-bottom:solid 1px #D2D2F9 ;
+                    
+                    " id='first-line'>Introduction</p>
+                </div>
+                <div class="terms_of_use_text1">
+                    <p>What exactly is a validator?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>A validator is a virtual entity that lives on the Beacon Chain, represented by a balance, public
+                        key, and other properties, and participates in consensus of the Ethereum network.
+                    </p>
+                </div>
+
+                <div class="terms_of_use_text3">
+                    <p>What is a validator client?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>A validator client is the software that acts on behalf of the validator by holding and using its
+                        private key to make attestations about the state of the chain. A single validator client can
+                        hold many key pairs, controlling many validators.
+
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>
+                        What is a node operator?
+
+
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>A node operator is the human being who makes sure the client software is running appropriately,
+                        maintaining hardware as needed.
+
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>How much ETH do I need to stake to become a validator?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>Each key-pair associated with a validator requires locking 32 ETH to be activated, which
+                        represents your initial balance as well as your initial and maximum voting power for any
+                        validator.
+
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>
+                        Is there any advantage to having more than 32 ETH at stake?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    No. There is no advantage to having more than 32 ETH staked.
+
+                    Depositing more than 32 ETH to a single set of keys does not increase rewards potential, nor does
+                    accumulating rewards above 32 ETH, as each validator is limited to an effective balance of 32. This
+                    means that staking is done in 32 ETH increments, each with its own set of keys and balance.
+
+
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>Why the 32 ETH maximum?
+                    </p>
+
+                </div>
+                <div class="terms_of_use_text2">
+                    Limiting the maximum stake to 32 ETH per validator encourages decentralization of power as it
+                    prevents any single validator from having an excessively large vote on the state of the chain. It
+                    also limits the amount of ETH that can be exited from staking at any given time, as the number of
+                    validator that can exit in a given time period is limited. This helps protect the network against
+                    certain attacks.<br>
+                    Although a validator's vote is weighted by the amount it has at stake, each validators voting weight
+                    starts at, and is capped at 32. It is possible to drop below this with poor node performance, but it
+                    is not possible to raise above it.<br>
+                    Do not deposit more than 32 ETH for a single validator. It will not add to your rewards and will be
+                    locked until the planned Shanghai update.
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>
+                        What is the deposit contract?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        You can think of the deposit contract as a transfer of funds between Ethereum accounts and
+                        Beacon Chain validators.
+                        It specifies who is staking, who is validating, how much is being staked, and who can withdraw
+                        the funds.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>
+                        Why do I need to have funds at stake?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        As a validator, you'll need to have funds at stake so you can be penalized for behaving
+                        dishonestly.
+                        In other words, to keep you honest, your actions need to have financial consequences.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>Can I stop running my validator for a few days and then start it back up again?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        If you go offline for a number of days under normal conditions you will lose an amount of ETH
+                        roughly equivalent to the amount of ETH you would have gained in that period. In other words, if
+                        you stood to earn ?0.01 ETH, you would instead be penalised ?0.01 ETH.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>When should I top up my validator's balance?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        The answer to this question very much depends on how much ETH you have at your disposal.
+                        You should certainly top up if your balance is close to 16 ETH. This is to ensure you don't get
+                        kicked out of the validator set (which automatically happens if your balance falls below 16
+                        ETH).
+                        At the other end of the spectrum, if your balance is closer to 31 ETH, it's probably not worth
+                        adding the extra ETH required to get back to 32.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>
+                        When can I withdraw my funds, and what's the difference between exiting and withdrawing?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        You can signal your intent to stop validating by signing a voluntary exit message with your
+                        validator.
+                        However, bear in mind that for the foreseeable future, once you've exited, there's no going
+                        back.
+                        There's no way for you to re-activate your validator, and you won't be able to transfer or
+                        withdraw your funds until the Shanghai upgrade planned to follow the Merge (which means your
+                        funds will remain inaccessible until then).
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>What happened to 'Eth2?'
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        The terms 'Eth1' and 'Eth2' are being deprecated in preparation for the merge.<br>
+                        After the merge, there will no longer be two distinct Ethereum networks; there will only be
+                        Ethereum.<br>
+                        Ethereum will consist of the execution layer (handles transactions and execution, formerly
+                        'Eth1'), and the consensus layer (handles proof-of-stake Beacon Chain, formerly 'Eth2' or
+                        'Ethereum 2.0').<br>
+                        These terminology updates only change naming conventions; this does not alter Ethereum's goals
+                        or roadmap.
+                    </p>
+                </div>
+                <div>
+                    <p style="font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    margin-left:8%;
+                    
+                    padding-bottom: 2%;
+                    border-bottom:solid 1px #D2D2F9 ;" id="second-line">Responsibilities</p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>What clients do I need to run?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        As a staker you are required to maintain and operate a node, running BOTH a consensus client AND
+                        an execution client.
+                        This is a new change and becomes a requirement at time of the Merge, so be sure you're running
+                        both before the upgrade.
+
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>Why do I need to run an execution client now?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        Previously a Beacon Node (consensus layer) only had to watch the staking deposit contract on the
+                        execution layer in order to know which validator accounts had deposited 32 ETH. This information
+                        was easily served by and obtained from third-party providers such as Infura or Alchemy.<br>
+                        Once the transition to proof-of-stake is complete via the Merge, validators will be responsible
+                        for processing transactions and signing off on their validity. This data will not be available
+                        from popular third-party sources after the Merge and will result in your validator being
+                        offline. When data sharding is implemented, validators will also be at risk of slashing under
+                        the proof-of-custody game.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>How are validators incentivized to stay active and honest?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        As a validator you are rewarded for proposing / attesting to blocks that are included in the
+                        chain.
+                        On the other hand, you can be penalized for being offline and behaving maliciously &ndash; for example
+                        attesting to invalid or contradicting blocks.
+                        The key concept is the following:
+                        Rewards are given for actions that help the network reach consensus.
+                        Minor penalties are given for inadvertant actions (or inactions) that hinder consensus.
+                        And major penalities &ndash; or slashings &ndash; are given for malicious actions.
+                        In other words, you maximize your rewards by providing the greatest benefit to the network as a
+                        whole.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>How are rewards/penalties issued?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        Your balance is updated periodically by the Ethereum network rules as you carry (or fail to
+                        carry) out your responsibilities.
+                        Your validator has its own balance &ndash; with the initial balance outlined in the deposit contract.
+                        Your rewards and penalties are reflected in your validator's balance over time.<br><br>
+                        After the Merge, your validator will also be responsible for processing transactions, and thus
+                        be entitled to unburnt gas fees associated with those transactions in blocks your validator
+                        proposes. These fees are accounted for on the execution layer, not the consensus layer, and thus
+                        require a traditional Ethereum address to be provided to your client.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>How often are rewards/penalties issued?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        Rewards and penalties are issued roughly every six and a half minutes &ndash; a period of time known
+                        as an epoch.
+                        Every epoch, the network measures the actions of each validator and issues your rewards or
+                        penalties appropriately.<br><br>
+                        Your validator will also receive unburnt gas fees when proposing blocks. Validators are chosen
+                        randomly by the protocol to propose blocks, and only one validator can propose a block for each
+                        12-second slot. There are 7200 slots each day, so each validator has 7200 chances-per-day to
+                        propose a block. If there are 360,000 validators, each validator will average a block proposal
+                        every 50 days.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>How large are the rewards/penalties?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        There is no easy answer to this question as there are many factors that go into this
+                        calculation.<br>
+                        Arguably the most impactful factor on rewards earned for validating transactions is the total
+                        amount of stake in the network. In other words, the total amount of validators. Depending on
+                        this figure the max annual return rate for a validator can be anywhere between 2 and 20%.<br>
+                        Given a fixed total number of validators, the rewards/penalties predominantly scale with the
+                        balance of the validator &ndash; attesting with a higher balance results in larger rewards/penalties
+                        whereas attesting with a lower balance results in lower rewards/penalties.<br><br>Note however
+                        that this scaling mechanism works in a non-obvious way. To understand the precise details of how
+                        it works requires understanding a concept called effective balance. If you're not yet familiar
+                        with this concept, we recommend you read through understanding validator effective balance
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>Why do rewards depend on the total number of validators in the network?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>Block rewards are calculated using a sliding scale based on the total amount of ETH staked on the
+                        network.<br>
+                        In other words: if the total amount of ETH staked is low, the reward (interest rate) is high,
+                        but as the total stake rises, the reward (interest) paid out to each validator starts to fall.
+                        Why a sliding scale? While we won't get into the gory details here, the basic intution is that
+                        there needs to be a minimum number of validators (and hence a minimum amount of ETH staked) for
+                        the network to function properly. So, to incentivize more validators to join, it's important
+                        that the interest rate remains high until this minimum number is reached.<br>
+                        Afterwards, validators are still encouraged to join (the more validators the more decentralized
+                        the network), but it's not absolutely essential that they do so (so the interest rate can fall).
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>How badly will I be penalized for being offline?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        It depends. In addition to the impact of effective balance there are two important scenarios to
+                        be aware of:<br>
+                        Being offline while a supermajority (2/3) of validators is still online leads to relatively
+                        small penalties as there are still enough validators online for the chain to finalize. This is
+                        the expected scenario.<br>
+                        Being offline at the same time as more than 1/3 of the total number of validators leads to
+                        harsher penalties, since blocks do not finalize anymore. This scenario is very extreme and
+                        unlikely to happen.<br><br>Note that in the second (unlikely) scenario, you stand to
+                        progressively lose up to 50% (16 ETH) of your stake over 21 days. After 21 days you are ejected
+                        out of the validator pool. This ensures that blocks start finalizing again at some point.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>How great does my uptime need to be for my validator to be net profitable?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>Overall, we'd expect your validator to be net profitable as long as your uptime is greater than
+                        50%.<br>
+                        This means that you don't need to go to extreme lengths with backup clients or redundant
+                        internet connections as the repercussions of being offline are not so severe.</p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>How much will I be penalized for acting maliciously?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        Again, it depends. Behaving maliciously &ndash; for example attesting to invalid or contradicting
+                        blocks, will lead to your stake being slashed.<br>
+                        The minimum amount that can be slashed is 1 ETH, but this number increases if other validators
+                        are slashed at the same time.<br>
+                        The idea behind this is to minimize the losses from honest mistakes, but strongly disincentivize
+                        coordinated attacks.
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>What exactly is slashing?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>
+                        Slashing has two purposes: (1) to make it prohibitively expensive to attack the network, and (2)
+                        to stop validators from being lazy by checking that they actually perform their duties. If
+                        you're slashed because you've acted in a provably destructive manner, a portion of your stake
+                        will be destroyed.
+                        If you're slashed you're prevented from participating in the protocol further and are forcibly
+                        exited.
+                    </p>
+                </div>
+                <div>
+                    <p style="font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    margin-left:8%;
+                    
+                    padding-bottom: 2%;
+                    border-bottom:solid 1px #D2D2F9 ;" id="third-line">Withdrawal credentials</p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>What are withdrawal credentials?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>Withdrawal Credentials is a 32-byte field in the deposit, for verifying the destination of valid
+                        withdrawals. Currently, there are two types of withdrawals: BLS withdrawal and Ethereum address
+                        withdrawal.
+                        BLS withdrawal: By default, deposit-cli would generate withdrawal credentials with the
+                        withdrawal key derived via mnemonics in EIP2334 format.
+                        Ethereum address withdrawal: If you want to withdraw to your Mainnet wallet address (formerly
+                        'Eth1' address) after the post-merge cleanup upgrade, you can set --eth1_withdrawal_address
+                        &lt;YOUR ETH ADDRESS&gt; when running deposit-cli. Please ensure that you have control over the
+                        keys
+                        to this address.
+
+                        Can I change the withdrawal credentials of my validator after the first deposit?
+                        No, you cannot change your withdrawal credentials in top-ups.</p>
+                </div>
+                <div>
+                    <p style="font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    margin-left:8%;
+                    
+                    padding-bottom: 2%;
+                    border-bottom:solid 1px #D2D2F9 ;" id="fourth-line">
+                        Keys
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>What happens if I lose my signing key?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>If you lose your signing key, your validator can no longer propose or attest.<br>
+                        Over time, your balance will decrease as you are punished for not participating in the consensus
+                        process. When your balance reaches 16 ETH, you will be automatically exited from the validator
+                        pool.<br>However, all is not lost. Assuming you derive your keys using EIP2334 (as per the
+                        default onboarding flow) then you can always recalculate your signing key from your withdrawal
+                        key.<br>After the Shanghai upgrade, your 16 ETH can then be withdrawn &ndash; with your withdrawal
+                        key &ndash; after a delay of around a day.<br>Note that this delay can be longer if many others are
+                        exiting or being kicked out at the same time.
+
+                    </p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>What happens if I use BLS withdrawal and I lose my withdrawal key?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>If you lose your withdrawal key, there is no way to access to the funds held by your validator.
+                        As such, it's a good idea to create your keys from mnemonics which act as another backup. This
+                        will be the default for validators who join via this site's onboarding process.</p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>What happens if my withdrawal key is stolen?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>If your withdrawal key is stolen, the thief can transfer your validator's balance, but only once
+                        the validator has exited.<br>
+                        If your signing key is not under the thief's control, the thief cannot exit your validator.<br>
+                        With your signing key, you could attempt to quickly exit the validator and then transfer the
+                        funds &ndash; with the withdrawal key &ndash; before the thief.</p>
+                </div>
+                <div class="terms_of_use_text3">
+                    <p>Why two keys instead of one?
+                    </p>
+                </div>
+                <div class="terms_of_use_text2">
+                    <p>Validating involves two keys for security reasons. Your signing key must be available at all
+                        times. As such, it will need to be held online. Since anything online is vulnerable to being
+                        hacked, it's not a good idea to use the same key for withdrawals.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" href="https://etherphoenix.io/index.html/deposit" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-scrollable" style="border: 1px;">
+          <div class="modal-content d-flex " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile purplecolor">1</div>
+                <div class="smallboxMobile">2</div>
+                <div class="smallboxMobile">3</div>
+                <div class="smallboxMobile">4</div>
+                <div class="smallboxMobile">5</div>
+                <div class="smallboxMobile">6</div>
+                <div class="smallboxMobile">7</div>
+                <div class="smallboxMobile">8</div>
+                <div class="smallboxMobile">9</div>
+                <div class="smallboxMobile">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight"  style="height: 632px;">
+  
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png">
+              </button>
+              <div class="dop_box">
+  
+                <div class="box_for_modal1 ">
+                </div>
+  
+                <div class="text_for_modal1 ">
+                  <p>Proof of Stake</p>
+                </div>
+  
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1 ">
+                  <p>1</p>
+                </div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2 ">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+  
+                <div class="box_for_modal3"></div>
+  
+                <div class="text_for_modal3 ">
+                  <p style="width: 600px;">The terminal</p>
+                </div>
+  
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4 ">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>Proof of stake</p>
+              </div>
+  
+              <div class="text_main_modal overflow-auto">The Beacon Chain upgrade brings proof-of-stake
+                consensus to
+                Ethereum.<br>
+                For this, we need active participants - known as validators - to propose, verify, and vouch
+                for
+                the validity of blocks. In exchange, honest validators receive financial rewards.<br>
+                Importantly,
+                as a validator you'll need to post TestnetETH as collateral in other words, have some funds
+                at
+                stake. The only way to become a validator is to make a one-way TestnetETH transaction to the
+                deposit contract on the current Ethereum chain.</div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I understand proof-of-stake and why validators are
+                needed.
+              </div>
+              <button class="Button_accept_modal overflow-auto " data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal1"></button>
+              <button class="button_modal_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal1"
+                style="border: none;background:none;">I accept</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+  
+  
+  
+  
+  
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+                <div class="smallboxMobile purplecolor">2</div>
+                <div class="smallboxMobile">3</div>
+                <div class="smallboxMobile">4</div>
+                <div class="smallboxMobile">5</div>
+                <div class="smallboxMobile">6</div>
+                <div class="smallboxMobile">7</div>
+                <div class="smallboxMobile">8</div>
+                <div class="smallboxMobile">9</div>
+                <div class="smallboxMobile">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+                <div class="box_for_modal1">
+                </div>
+                <div class="text_for_modal1">
+                  <p>Proof of Stake </p>
+                </div>
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1">
+                  <p>1</p>
+                </div>
+                <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+                <div class="box_for_modal3"></div>
+                <div class="text_for_modal3">
+                  <p>The terminal</p>
+                </div>
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>The deposit</p>
+              </div>
+              <div class="text_main_modal overflow-auto">To become a validator on the Beacon Chain, you need to
+                deposit 32
+                TestnetETH per validator that you wish to run.<br>
+                This is a non-reversible transaction.<br>
+                Withdrawing your deposit will not be possible until the Shanghai upgrade planned for after
+                the
+                Merge.</div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I understand that I need to deposit 32 TestnetETH to
+                become a
+                validator, and that the transfer of TestnetETH to the Beacon Chain is one-way, and
+                non-reversible.
+  
+              </div>
+              <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal2"></button>
+              <button class="button_modal_text2" data-mdb-toggle="modal" data-mdb-target="#exampleModal2"
+                style="border: none;background:none;">I accept</button>
+              <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal"></button>
+              <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal"
+                style="border: none;background:none;">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">2</div>
+                <div class="smallboxMobile purplecolor">3</div>
+                <div class="smallboxMobile">4</div>
+                <div class="smallboxMobile">5</div>
+                <div class="smallboxMobile">6</div>
+                <div class="smallboxMobile">7</div>
+                <div class="smallboxMobile">8</div>
+                <div class="smallboxMobile">9</div>
+                <div class="smallboxMobile">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+                <div class="box_for_modal1">
+                </div>
+                <div class="text_for_modal1">
+                  <p>Proof of Stake </p>
+                </div>
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1">
+                  <p>1</p>
+                </div>
+                <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+                <div class="check_circle_for_modal2"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal3"></div>
+                <div class="text_for_modal3">
+                  <p>The terminal</p>
+                </div>
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>Using the terminal</p>
+              </div>
+              <div class="text_main_modal overflow-auto">To become a validator, you will need to be able to run
+                commands in
+                the
+                terminal on your computer. Generating your new key pairs and installing the validator
+                software
+                are both done in the terminal.
+              </div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I am technically capable of setting up and running a
+                validator.
+  
+  
+              </div>
+              <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal3"></button>
+              <button class="button_modal_text2" data-mdb-toggle="modal" data-mdb-target="#exampleModal3"
+                style="border: none;background:none;">I accept</button>
+              <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal1"></button>
+              <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal1"
+                style="border: none;background:none;">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">2</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">3</div>
+                <div class="smallboxMobile purplecolor">4</div>
+                <div class="smallboxMobile">5</div>
+                <div class="smallboxMobile">6</div>
+                <div class="smallboxMobile">7</div>
+                <div class="smallboxMobile">8</div>
+                <div class="smallboxMobile">9</div>
+                <div class="smallboxMobile">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+                <div class="box_for_modal1">
+                </div>
+                <div class="text_for_modal1">
+                  <p>Proof of Stake </p>
+                </div>
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1">
+                  <p>1</p>
+                </div>
+                <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+                <div class="check_circle_for_modal2"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal3"></div>
+                <div class="text_for_modal3">
+                  <p>The terminal</p>
+                </div>
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="check_circle_for_modal3"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>Validator uptime </p>
+              </div>
+              <div class="text_main_modal overflow-auto">You'll only get your full rewards if your validator is
+                online and
+                up to
+                date. This is your responsibility. If your validator goes offline you'll be penalized. The
+                penalties for being offline are roughly equal to the rewards for actively participating.
+  
+              </div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I understand that it is important to keep my validator
+                online and
+                updated.
+  
+  
+  
+  
+              </div>
+              <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal4"></button>
+              <button class="button_modal_text2" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"
+                style="border: none;background:none;">I accept</button>
+              <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal2"></button>
+              <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal2"
+                style="border: none;background:none;">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">2</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">3</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">4</div>
+                <div class="smallboxMobile purplecolor">5</div>
+                <div class="smallboxMobile">6</div>
+                <div class="smallboxMobile">7</div>
+                <div class="smallboxMobile">8</div>
+                <div class="smallboxMobile">9</div>
+                <div class="smallboxMobile">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+                <div class="box_for_modal1">
+                </div>
+                <div class="text_for_modal1">
+                  <p>Proof of Stake </p>
+                </div>
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1">
+                  <p>1</p>
+                </div>
+                <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+                <div class="check_circle_for_modal2"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal3"></div>
+                <div class="text_for_modal3">
+                  <p>The terminal</p>
+                </div>
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="check_circle_for_modal3"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="check_circle_for_modal4"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>Bad validator behaviour</p>
+              </div>
+              <div class="text_main_modal overflow-auto">If you try to cheat the system, or act contrary to the
+                specification,
+                you will be liable to incur a penalty, known as slashing. Running your validator keys
+                simultaneously on two or more machines will result in slashing.
+              </div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I understand that if I act contrary to the
+                specification, I am
+                liable
+                to be slashed.
+              </div>
+              <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal5"></button>
+              <button class="button_modal_text2" data-mdb-toggle="modal" data-mdb-target="#exampleModal5"
+                style="border: none;background:none;">I accept</button>
+              <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal3"></button>
+              <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal3"
+                style="border: none;background:none;">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">2</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">3</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">4</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">5</div>
+                <div class="smallboxMobile purplecolor">6</div>
+                <div class="smallboxMobile">7</div>
+                <div class="smallboxMobile">8</div>
+                <div class="smallboxMobile">9</div>
+                <div class="smallboxMobile">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+                <div class="box_for_modal1">
+                </div>
+                <div class="text_for_modal1">
+                  <p>Proof of Stake </p>
+                </div>
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1">
+                  <p>1</p>
+                </div>
+                <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+                <div class="check_circle_for_modal2"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal3"></div>
+                <div class="text_for_modal3">
+                  <p>The terminal</p>
+                </div>
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="check_circle_for_modal3"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="check_circle_for_modal4"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="check_circle_for_modal5"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>Key management</p>
+              </div>
+              <div class="text_main_modal overflow-auto">To become a validator you'll need to know about managing
+                keys and
+                protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please do not
+                proceed. Note that during this process you will not derive the keys needed to withdraw
+                later, so
+                store your mnemonic safely in order to be able to withdraw later.<br>
+                We'll help you create a signing key for every validator you want to run. Because there are
+                no
+                withdrawals until the Shanghai upgrade planned to follow the Merge, you will not create your
+                withdrawal keys now. When it is possible to withdraw your funds, you can derive your
+                withdrawal
+                keys from your mnemonic.<br>
+                Your mnemonic is the backup for your signing keys and will be the ONLY way to withdraw your
+                TestnetETH when the time comes and no one can help you recover your mnemonic if you lose it.
+              </div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I understand that keys are my responsibility and that
+                my mnemonic
+                (seed) will be the <strong>ONLY WAY </strong>to withdraw my funds.
+  
+  
+              </div>
+              <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal6"></button>
+              <button class="button_modal_text2" data-mdb-toggle="modal" data-mdb-target="#exampleModal6"
+                style="border: none;background:none;">I accept</button>
+              <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal4"></button>
+              <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"
+                style="border: none;background:none;">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">2</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">3</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">4</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">5</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">6</div>
+                <div class="smallboxMobile purplecolor">7</div>
+                <div class="smallboxMobile">8</div>
+                <div class="smallboxMobile">9</div>
+                <div class="smallboxMobile">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+                <div class="box_for_modal1">
+                </div>
+                <div class="text_for_modal1">
+                  <p>Proof of Stake </p>
+                </div>
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1">
+                  <p>1</p>
+                </div>
+                <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+                <div class="check_circle_for_modal2"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal3"></div>
+                <div class="text_for_modal3">
+                  <p>The terminal</p>
+                </div>
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="check_circle_for_modal3"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="check_circle_for_modal4"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="check_circle_for_modal5"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="check_circle_for_modal6"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>Validating is a long-term<br>
+                  commitment
+                </p>
+              </div>
+              <div class="text_main_modal overflow-auto" style="margin-top: 20px;">Transfers between validators
+                and
+                withdrawals
+                aren't possible yet.
+                Withdrawal functionality is currently a top priority, and is planned to be rolled out in the
+                next network upgrade, known as the Shanghai upgrade.<br><br>
+  
+                With transfers disabled for now, you won't be able to voluntarily exit and then restart
+                later.
+                This means you need to be in it for the long haul.
+  
+              </div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I understand that <strong> CANNOT TRANSFER</strong> my
+                stake for
+                a
+                while, and <strong> CANNOT WITHDRAW</strong> until the merge. I understand that if I exit, I
+                will not be able to rejoin until much later. This is a long term commitment.
+  
+  
+  
+  
+              </div>
+              <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal7"></button>
+              <button class="button_modal_text2" data-mdb-toggle="modal" data-mdb-target="#exampleModal7"
+                style="border: none;background:none;">I accept</button>
+              <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal5"></button>
+              <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal5"
+                style="border: none;background:none;">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">2</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">3</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">4</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">5</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">6</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">7</div>
+                <div class="smallboxMobile purplecolor">8</div>
+                <div class="smallboxMobile">9</div>
+                <div class="smallboxMobile">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+                <div class="box_for_modal1">
+                </div>
+                <div class="text_for_modal1">
+                  <p>Proof of Stake </p>
+                </div>
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1">
+                  <p>1</p>
+                </div>
+                <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+                <div class="check_circle_for_modal2"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal3"></div>
+                <div class="text_for_modal3">
+                  <p>The terminal</p>
+                </div>
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="check_circle_for_modal3"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="check_circle_for_modal4"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="check_circle_for_modal5"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="check_circle_for_modal6"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="check_circle_for_modal7"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>Early adopter risks</p>
+              </div>
+              <div class="text_main_modal overflow-auto">You're joining a network in its early stages. As with any
+                new piece
+                of
+                software, there is the potential for software bugs. While unlikely, potential bugs may
+                result in
+                slashing.
+              </div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I am an early adopter, and I accept that software and
+                design bugs
+                may
+                result in me being slashed.
+              </div>
+              <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal8"></button>
+              <button class="button_modal_text2" data-mdb-toggle="modal" data-mdb-target="#exampleModal8"
+                style="border: none;background:none;">I accept</button>
+              <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal6"></button>
+              <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal6"
+                style="border: none;background:none;">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      
+      
+      
+      
+      <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">2</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">3</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">4</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">5</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">6</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">7</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">8</div>
+                <div class="smallboxMobile purplecolor">9</div>
+                <div class="smallboxMobile">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+                <div class="box_for_modal1">
+                </div>
+                <div class="text_for_modal1">
+                  <p>Proof of Stake </p>
+                </div>
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1">
+                  <p>1</p>
+                </div>
+                <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+                <div class="check_circle_for_modal2"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal3"></div>
+                <div class="text_for_modal3">
+                  <p>The terminal</p>
+                </div>
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="check_circle_for_modal3"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="check_circle_for_modal4"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="check_circle_for_modal5"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="check_circle_for_modal6"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="check_circle_for_modal7"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="check_circle_for_modal8"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>Staking checklist</p>
+              </div>
+              <div class="text_main_modal overflow-auto">Please review the staking checklist prior to proceeding.
+                Use this
+                as a
+                guide to check off tasks as you complete validator setup.
+              </div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I have reviewed the checklist.
+              </div>
+              <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal9"></button>
+              <button class="button_modal_text2" data-mdb-toggle="modal" data-mdb-target="#exampleModal9"
+                style="border: none;background:none;">I accept</button>
+              <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal7"></button>
+              <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal7"
+                style="border: none;background:none;">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-header" id="headDisplay">
+              <div class="container d-flex justify-content-center">
+                <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">2</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">3</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">4</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">5</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">6</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">7</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">8</div>
+                <div class="smallboxMobile" id="smallboxMobileStyle">9</div>
+                <div class="smallboxMobile purplecolor">10</div>
+              </div>
+            </div>
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button id="crossmodal" type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+                <div class="box_for_modal1">
+                </div>
+                <div class="text_for_modal1">
+                  <p>Proof of Stake </p>
+                </div>
+                <div class="small_box_for_modal1"></div>
+                <div class="number_for_modal1">
+                  <p>1</p>
+                </div>
+                <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal2"></div>
+                <div class="text_for_modal2">
+                  <p>Deposit</p>
+                </div>
+                <div class="small_box_for_modal2"></div>
+                <div class="number_for_modal2">
+                  <p>2</p>
+                </div>
+                <div class="check_circle_for_modal2"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal3"></div>
+                <div class="text_for_modal3">
+                  <p>The terminal</p>
+                </div>
+                <div class="small_box_for_modal3"></div>
+                <div class="number_for_modal3">
+                  <p>3</p>
+                </div>
+                <div class="check_circle_for_modal3"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal4"></div>
+                <div class="text_for_modal4">
+                  <p>Uptime</p>
+                </div>
+                <div class="small_box_for_modal4"></div>
+                <div class="number_for_modal4">
+                  <p>4</p>
+                </div>
+                <div class="check_circle_for_modal4"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal5"></div>
+                <div class="text_for_modal5">
+                  <p>Bad behaviour</p>
+                </div>
+                <div class="small_box_for_modal5"></div>
+                <div class="number_for_modal5">
+                  <p>5</p>
+                </div>
+                <div class="check_circle_for_modal5"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal6"></div>
+                <div class="text_for_modal6">
+                  <p>Key management</p>
+                </div>
+                <div class="small_box_for_modal6"></div>
+                <div class="number_for_modal6">
+                  <p>6</p>
+                </div>
+                <div class="check_circle_for_modal6"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal7"></div>
+                <div class="text_for_modal7">
+                  <p>Commitment</p>
+                </div>
+                <div class="small_box_for_modal7"></div>
+                <div class="number_for_modal7">
+                  <p>7</p>
+                </div>
+                <div class="check_circle_for_modal7"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal8"></div>
+                <div class="text_for_modal8">
+                  <p>Early adopter risks </p>
+                </div>
+                <div class="small_box_for_modal8"></div>
+                <div class="number_for_modal8">
+                  <p>8</p>
+                </div>
+                <div class="check_circle_for_modal8"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal9"></div>
+                <div class="text_for_modal9">
+                  <p>Checklist</p>
+                </div>
+                <div class="small_box_for_modal9"></div>
+                <div class="number_for_modal9">
+                  <p>9</p>
+                </div>
+                <div class="check_circle_for_modal9"><img src="photo/CheckCircle.png"></div>
+                <div class="box_for_modal10"></div>
+                <div class="text_for_modal10">
+                  <p>Confirmation</p>
+                </div>
+                <div class="small_box_for_modal10"></div>
+                <div class="number_for_modal10">
+                  <p>10</p>
+                </div>
+              </div>
+              <div class="text_aling_modal overflow-visible">
+                <p>Confirmation</p>
+              </div>
+              <div class="text_main_modal overflow-auto">I have read and agree to the Launchpad terms of service.
+              </div>
+              <div class="line_for_modal overflow-auto"></div>
+              <div class="bottom_text_modal overflow-auto">I understand and agree to the terms-of-service and
+                everything stated in the previous sections.
+              </div>
+              <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#Lastbutton"></button>
+              <button class="button_modal_text2" data-mdb-toggle="modal" data-mdb-target="#Lastbutton"
+                style="border: none;background:none;">Continue</button>
+              <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal8"></button>
+              <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal8"
+                style="border: none;background:none;">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Lastbutton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="border: 1px;">
+          <div class="modal-content " style="border-radius: 0; border:1px solid;">
+            <div class="modal-body" id="modalbodyheight" style="height: 632px;">
+              <button type="button" class="cross_modal" id="crossmodal" data-mdb-dismiss="modal" aria-label="Close"
+                style="border:none;background:none;"><img src="photo/XSquare.png"></button>
+              <div class="dop_box">
+              </div>
+              <div class="staking-text-for-button">Staking</div>
+  
+              <div class="mobilecalcdeposit">
+                <div class="efirimgformobile">
+                  <p class="eth-text-mobile">ETH</p>
+                </div>
+                <div class="eth-calc-box-mobile">
+                  <div class="container row"><p id="eth-text-for-calc1"class="col-6 ">Your holdings</p><p class="col-6"style="display: flex;flex-direction: row-reverse;">Value</p> </div>
+                   <div class="container row"><input id="custom-value2"class="col-6 " value="0"/><p id="range-value2" class="col-6"style="display: flex;flex-direction: row-reverse;">123</p> </div>
+                
+              </div>
+                <div>
+                  <input type="range" id="customRange3" class="form-range " max="32" step="0.05" min="0" value="0" style="margin-top: 160px;" />
+                </div>
+  
+  
+   <div class="eth-calc-box-mobile2">
+                  <div class="container row"style="height: 20px;"><p id="eth-text-for-calc5"class="col-6 ">Daily Profit</p><p id="eth-text-for-calc6"class="col-6"style="display: flex;flex-direction: row-reverse;">Monthly Profit</p> </div>
+                   <div class="container row" style="height: 20px;">
+                     <p id="eth-text-for-calc7"class="col-6 " ></p>
+                     <p id="eth-text-for-calc8"class="col-6"style="display: flex;flex-direction: row-reverse;"></p> </div>
+                
+              </div>
+  
+  
+   <div class="eth-calc-box-mobile3"style="margin-top: 10px;">
+                  <div class="container row"style="height: 20px;"><p id="eth-text-for-calc9"class="col-6 ">Yearly Profit</p><p id="eth-text-for-calc10"class="col-6"style="display: flex;flex-direction: row-reverse;">Yearly yield</p> </div>
+                   <div class="container row" style="height: 20px;"><p id="eth-text-for-calc11"class="col-6 "></p><p id="eth-text-for-calc12"class="col-6"style="display: flex;flex-direction: row-reverse;"></p> </div>
+                
+              </div>
+                
+              </div>
+  
+  
+              <div class="ether_box your-holdings " id="dark-box5"
+                style="width:58%;margin-left:21%;margin-top:8%;border: none;">
+                <div class="col-2 form-of-eth-1" style=" margin-left:40%"><img class="mx-auto" src="photo/Etherium.png">
+                </div>
+                <div class="col-2 form-of-eth-1" style=" margin-left:43%">
+                  <p style="font-family: 'Inter';
+                                  font-style: normal;
+                                  font-weight: 700;
+                                  font-size: 20px;
+                                  line-height: 24px;
+                                  color: #787878;
+                                  ">ETH</p>
+                </div>
+                <div class="container-fluid row ether_box_in" style="margin-left:1em; width:95%;margin-top:1em;">
+                  <div class="col-5" id="your-holdings">
+  
+                    <p style="" class='your-holdings'>Your holdings<br><br><input value="0" id="custom-value1" type="number"
+                        style="font-family: 'Inter';font-style: normal;font-weight: 600;font-size: 22px;line-height: 27px;color: #787878;background:none;border:none;outline:none" />
+                    </p>
+  
+                  </div>
+                  <div class="col-2">
+                    <p style="font-family: 'Inter';
+                                      font-weight: 500;
+                                      font-size: 14px;
+                                      line-height: 17px;
+                                      margin-top: 6%;
+                                      margin-right:3%;
+                                      direction:rtl;
+                                      color: #8C8CF5;">Value<br><br><span
+                        style="font-family: 'Inter';font-style: normal;font-weight: 600;font-size: 22px;line-height: 27px;color: #787878;"
+                        id="range-value1">0 </span>
+                  </div>
+                  <div class="col-2 form-of-eth" style="border-left:1px solid #D2D2F9"><img
+                      class="mx-auto" src="photo/Etherium.png"></div>
+                  <div class="col-2 form-of-eth" style="margin-top:1.5em;">
+                    <p style="font-family: 'Inter';
+                                  font-style: normal;
+                                  font-weight: 700;
+                                  font-size: 20px;
+                                  line-height: 24px;
+                                  color: #787878;
+                                  ">ETH</p>
+                  </div>
+                  <input type="range" class="form-range " max="32" step="0.05" min="0" value="0" id="customRange2"  />
+                </div>
+  
+                <div class="container row" style="margin-top:4em;">
+  
+                  <p class="col-3 calc-text justify-content-center daily-profit-text"
+                    style="display: flex;flex-direction: column;align-items: center;">Daily Profit </p>
+                  <p class="col-3 calc-text daily-profit-text"
+                    style="display: flex;flex-direction: row;justify-content: center;">Monthly
+                    Profit</p>
+                  <p class="col-3 calc-text daily-profit-text"
+                    style="display: flex;flex-direction: row;justify-content: center;">Yearly
+                    Profit</p>
+                  <p class="col-3 calc-text daily-profit-text"
+                    style="display: flex;flex-direction: column;align-items: center;">Yearly yield</p>
+  
+                </div>
+                <div class="container-fluid row">
+  
+                  <p class="col-3 profit-text" style="font-family: 'Inter';
+                              font-style: normal;
+                              font-weight: 600;
+                              font-size: 16px;
+                              flex-direction: column;
+                              display: flex;
+                               align-items: center;
+                              line-height: 19px;      
+                              color: #787878;" id="daily-profit1">0 </p>
+  
+                  <p class="col-3 profit-text" style="font-family: 'Inter';
+                              font-style: normal;
+                              font-weight: 600;
+                              font-size: 16px;
+                              flex-direction: column;
+                              display: flex;
+                              align-items: center;
+                              line-height: 19px;       
+                              color: #787878;"id="month-profit1">0</p>
+                  <p class="col-3 profit-text" style="font-family: 'Inter';
+                              font-style: normal;
+                              font-weight: 600;
+                              font-size: 16px;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              line-height: 19px;       
+                              color: #787878;"id="year-amount1">0</p>
+                  <p class="col-3 profit-text" style="font-family: 'Inter';
+                              font-style: normal;
+                              font-weight: 600;
+                              font-size: 16px;
+                              flex-direction: column;
+                              display: flex;
+                              align-items: center;
+                              line-height: 19px;       
+                              color: #787878;"id='amount-procent1'>+0%</p>
+  
+                </div>
+  
+              </div>
+  
+              <div class="box-diagram">
+                
+                <div class="first-procent-wrapper procent-wrapper" id="first-procent-wrapper">
+                  <div class="procent-wrapper">
+                    <p class="box-diagram-text"></p>
+                  </div>
+                </div>
+                <div class="second-procent-wrapper procent-wrapper" id="second-procent-wrapper">
+                  <div class="second-procent-line">
+                    <p class="box-diagram-text" style="margin-left:10em"></p>
+                  </div>
+                </div>
+                <div class="third-procent-wrapper procent-wrapper" id="third-procent-wrapper">
+                  <div class="procent-wrapper">
+                    <p class="box-diagram-text" id="third-diagram-text-lol"></p>
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="small_box_calc1"></div>
+                <div class="small_box_calc1_text">Deposit</div>
+              
+              <div class="small_box_calc2"></div>
+              <div class="small_box_calc2_text">Daily Profit</div>
+              <div class="small_box_calc3"></div>
+              <div class="small_box_calc3_text">Year Procent</div>
+  
+              <button class="staking-premium-button staking-premium-text" id="premium-button" disabled data-mdb-toggle="modal"
+                data-mdb-target="#chatmodal">Premium</button>
+              <button class="staking-unstake-button staking-unstake-text">Unstake</button>
+              <button class="staking-stake-button staking-stake-text"id="stake-button">Stake</button>
+              <button class="staking-back-button staking-back-text" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal9">Back</button>
+              <button class="wallet_modal"
+                style="font-family: 'Inter';color:#FFFFFF;font-style: normal;font-weight: 900;font-size: 14px;line-height: 17px;">Wallet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+     <footer class="text-center text-lg-start mt-5 " id="footMobile">
+        <div class="bottomnavbar">
+          <div class="navbar navbar-expand-lg fixed-bottom" style="height: 165px;" id="footershadow">
+
+            <div class="container-fluid" style="justify-content:center;">
+              <button id="foot-btn" type="button" class="btn btn-outline-light "
+                style="color:#FFFFFF;background-color:#D2D2F9;width:65%;border:none;height:4em;margin:20px; ">
+                <a type="button" href="https://etherphoenix.io/index.html#no-back" style="color:#FFFFFF;font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;">Staking launpad</a>
+              </button>
+            </div>
+            <div class="container-fluid justify-content-center ">
+              <a style="color:#FFFFFF;margin-left: 2.5%;margin-right: 9px;" href="https://twitter.com/etherphoenlx"
+                target="_blank"><img src="photo/TwitterMobileLight.png"></a>
+
+              <a
+                style="color:#FFFFFF;padding-right: 5%;margin-left: 5%;padding-left: 5%;border-left: 1px solid #787878;border-right: 1px solid #787878;href='#'"><img
+                  src="photo/YoutubeLogoMobileLight.png"></a>
+
+              <a style="color:#FFFFFF;" href='https://medium.com/@etherphoenix' target="_blank"><img
+                  style="width: 50px;" src="photo/Mediuym.svg"></a>
+            </div>
+          </div>
+          <div class="container-fluid leftFooter"
+            style="display:flex;flex-direction:column;padding-top: 2%;padding-bottom: 6%;">
+            <a class="footerA footerA1" style="color:#787878;margin-bottom:6px;margin-top:9px;"
+              href="indexFAQ.html">FAQ</a>
+            <div class="linefooter footerA2"></div>
+            <a class="footerA" style="color:#787878;margin-bottom:6px;margin-top:6px;" href="indexJobs.html">Jobs</a>
+            <div class="linefooter"></div>
+            <a class="footerA footerA3" style="color:#787878;text-align: center;margin-top:6px;" type="button"
+              href="index2.html">Terms of Service</a>
+
+          </div>
+        </div>
+      </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <footer class="text-center text-lg-start mt-5 pt-5 " id="foot"style="width: 100%;position: absolute;top: 47em;">
+      <div class="bottomnavbar">
+        <div class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="height: 100px; background-color:#303030;">
+          <div class="container-fluid leftFooter" style="justify-content:left;padding-top: 2%;padding-bottom: 2%;">
+            <a type="button" class="footerA" href="https://etherphoenix.io/index.html#no-back"
+              style="color:#FFFFFF; margin-left: 5%;padding-right: 5%; border-right:1px solid" 
+              role="button">Deposit </a>
+
+
+            <a class="footerA footerA1"
+              style="color:#FFFFFF;text-align: left;margin-left: 5%;padding-right: 5%; border-right:1px solid"
+              type="button" href="index2.html">Terms of Service</a>
+
+            <a class="footerA" style="color:#FFFFFF;margin-left: 5%;padding-right: 5%; border-right:1px solid"
+              href="indexFAQ.html">FAQ</a>
+
+            <a class="footerA" style="color:#FFFFFF;margin-left: 5%;" href="indexJobs.html">Jobs</a>
+          </div>
+          <div class="container-fluid" style="justify-content:center;background-color:#303030;">
+            <button type="button" id="foot-btn1" href="https://etherphoenix.io/index.html#no-back" class="btn btn-outline-light "
+              style="color:#FFFFFF;background-color:#D2D2F9;width:40%;border:none;height:5em;">
+              <a type="button"  href="https://etherphoenix.io/index.html#no-back" style="color:#FFFFFF;font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px; ">Staking launpad</a>
+            </button>
+          </div>
+          <div class="container-fluid justify-content-center " style="background-color:#303030;">
+            <a style="color:#FFFFFF;margin-left: 5%" target="_blank" href="https://twitter.com/etherphoenlx"><img
+                src="photo/Twitter.png"></a>
+
+            <a style="color:#FFFFFF;margin-left: 5%;padding-left: 5%;border-left: 1px solid;border-right: 1px solid; padding-right: 5%"
+              href="#"><img src="photo/YoutubeLogo.png"></a>
+
+            <a style=" color:#FFFFFF;margin-right: 5%;padding-left: 1%;" href="https://medium.com/@etherphoenix"
+              target="_blank"><img style="width:65px;height:65px;" src="photo/MediuymDark.svg"></a>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+    
+ <script>
+ 
+ const themeButton=document.getElementById('theme-button')
+const bodyTheme = document.getElementById('body');
+const p = document.getElementsByTagName('p');
+const darkBox = document.getElementById('dark-box');
+const darkBox1 = document.getElementById('nav-third');
+  const modal = document.getElementById("myModal");
+  const graficButton = document.getElementById('grafic-wrapper');
+  const globe = document.getElementById('globe');
+  const darkModal = document.getElementById('bg-terms');
+  const navSecondButton = document.getElementById('nav-second-button')
+  const stakingButton = document.getElementById('staking-launpad-button')
+  const customRange = document.getElementById('customRange1');
+const customRange1 = document.getElementById('customRange2');
+const customRange2 = document.getElementById('customRange3')
+const rangeValue = document.getElementById('range-value');
+const rangeValue1 = document.getElementById('range-value1')
+const rangeValue2 = document.getElementById('range-value2')
+var customValue = document.getElementById('custom-value');
+const customValue2 = document.getElementById('custom-value2')
+const customValue1 = document.getElementById('custom-value1')
+const amountProcent = document.getElementById('amount-procent');
+const amountProcent1 = document.getElementById('amount-procent1');
+const amountProcent2 = document.getElementById('eth-text-for-calc12')
+const yearAmount = document.getElementById('year-amount');
+const yearAmount1 = document.getElementById('year-amount1')
+const yearAmount2 = document.getElementById('eth-text-for-calc11')
+const valueForFix = document.getElementById('value-for-fix');
+const monthProfit = document.getElementById('month-profit');
+const monthProfit1 = document.getElementById('month-profit1');
+const monthProfit2 = document.getElementById('eth-text-for-calc8');
+const firstProcentWrapper = document.getElementById('first-procent-wrapper')
+const secondProcentWrapper = document.getElementById('second-procent-wrapper')
+const thirdProcentWrapper = document.getElementById('third-procent-wrapper')
+const boxDiagramText = document.getElementsByClassName('box-diagram-text')
+const dailyProfit1 = document.getElementById('daily-profit1')
+const dailyProfit2 = document.getElementById('eth-text-for-calc7')
+const mainText = document.getElementById('main-text')
+const faqText = document.getElementById('terms_of_use_text')
+const wallBtn = document.getElementById('wallet-button-FAQ')
+const footBtn1 = document.getElementById('foot-btn1')
+
+
+
+
+themeButton.addEventListener('click',function(){
+  console.log(darkBox1);
+  
+  // if(bodyTheme.classList.contains('dark-mode')){
+  //   bodyTheme.classList.remove('dark-mode');
+  //   bodyTheme.classList.add('light-mode');
+  //   // darkmode.disable();
+  // }
+  // else{
+  //   bodyTheme.classList.remove('light-mode');
+  //   bodyTheme.classList.add('dark-mode');
+  //   // darkmode.enable();
+  // }
+  
+  themeButton.classList.toggle('theme-button')
+  themeButton.classList.toggle('sun-button')
+  if(themeButton.classList == 'custom-control-label sun-button'){
+     darkModal.style.borderRight = '3px solid #FFAB7C'
+     darkModal.style.backgroundColor = "#1E1E1E"
+     faqText.style.color = "#FFF"
+     bodyTheme.style.backgroundColor = "#1E1E1E"
+    globe.src = 'photo/GlobeLight.png'
+    wallBtn.style.backgroundColor = "#FFAB7C"
+    footBtn1.style.backgroundColor = "#FFAB7C"
+    footBtn1.style.color = "#FFAB7C"
+    darkBox1.classList.add('navbar-dark')
+    
+  }
+  else{
+    darkModal.style.borderRight = '3px solid #D2D2F9'
+    globe.src = 'photo/Globe.png'
+    faqText.style.color = ""
+    darkModal.style.backgroundColor = "#FFF"
+    darkBox1.classList.remove('navbar-dark')
+    bodyTheme.style.backgroundColor = "#FFF"
+    wallBtn.style.backgroundColor = "rgb(210, 210, 249)"
+    footBtn1.style.backgroundColor = "rgb(210, 210, 249)"
+    footBtn1.style.color = "#FFF"
+
+  }
+  
+  
+
+  
+
+})
+theme =  localStorage.setItem('theme', 'dark-theme');
+        themebtn =localStorage.setItem('themebtn', 'custom-control-label sun-button');
+if(localStorage.themebtn != undefined){
+bodyTheme.classList.remove('dark-theme')
+    bodyTheme.classList = localStorage.theme
+    themeButton.classList = localStorage.themebtn 
+    darkBox1.classList.add('navbar-dark')
+
+    
+}
+else { 
+bodyTheme.classList = ' '
+themeButton.classList = 'custom-control-label theme-button'
+
+}
+if(bodyTheme.classList = "dark-theme"){
+    themeButton.classList.remove('theme-button')
+    themeButton.classList.add('sun-button')
+
+    globe.src = 'photo/GlobeLight.png'
+    bodyTheme.style.backgroundColor = "#1E1E1E"
+    modalMainBg.style.backgroundColor = "#1E1E1E"
+    langBtn.style.color = "#FFF"
+    walletButtonNav.style.backgroundColor = "#FFAB7C"
+    walletButtonNav.style.color = "#FFF"
+    footButton.style.backgroundColor = "#FFAB7C"
+    footButton.style.color = "#FFF"
+    darkBox1.style.backgroundColor = "#1E1E1E"
+    
+    
+}
+else{
+    themeButton.classList.add('theme-button')
+    themeButton.classList.remove('sun-button')
+
+    globe.src = 'photo/Globe.png'
+    bodyTheme.style.backgroundColor = ""
+    modalMainBg.style.backgroundColor = ""
+    langBtn.style.color = ""
+    walletButtonNav.style.backgroundColor = "rgb(210, 210, 249)"
+    walletButtonNav.style.color = "#000"
+    footButton.style.backgroundColor = "#D2D2F9"
+    footButton.style.color = "#FFF"
+    darkBox1.style.backgroundColor = "#FFF"
+    
+    
+}
+if(themeButton.classList == 'custom-control-label sun-button'){
+     darkModal.style.borderRight = '3px solid #FFAB7C'
+    globe.src = 'photo/GlobeLight.png'
+    bodyTheme.style.backgroundColor = "#1E1E1E"
+    modalMainBg.style.backgroundColor = "#1E1E1E"
+    langBtn.style.color = "#FFF"
+    walletButtonNav.style.backgroundColor = "#FFAB7C"
+    walletButtonNav.style.color = "#FFF"
+    footButton.style.backgroundColor = "#FFAB7C"
+    footButton.style.color = "#FFF"
+    themeButton.classList.remove('theme-button')
+    darkBox1.style.backgroundColor = "#1E1E1E"
+ 
+
+
+
+    
+  }
+  else{
+    darkModal.style.borderRight = '3px solid #D2D2F9'
+    globe.src = 'photo/Globe.png'
+    bodyTheme.style.backgroundColor = "#FFF"
+    modalMainBg.style.backgroundColor = ""
+    langBtn.style.color = ""
+    walletButtonNav.style.backgroundColor = "rgb(210, 210, 249)"
+    walletButtonNav.style.color = "#000"
+    footButton.style.backgroundColor = "#D2D2F9"
+    footButton.style.color = "#FFF"
+     themeButton.classList.add('theme-button')
+    darkBox1.style.backgroundColor = "#FFF"
+   
+
+
+    
+  }
+
+customRange2.addEventListener('input', function(){
+  customValue2.value = customRange2.value;
+  // console.log(customValue.value)
+  fetch('https://min-api.cryptocompare.com/data/v2/histoday?fsym=ETH&tsym=USD&limit=1&aggregate=3&e=Kraken&extraParams=your_app_name')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    let result =  customValue2.value
+    boxDiagramText[1].style.marginLeft = '6em'
+    rangeValue2.innerHTML = (customValue.value*data.Data.Data[0].close).toFixed(2) + "USD";
+    // console.log(data.Data.Data)
+    boxDiagramText[0].innerHTML = customValue2.value + "ETH";
+    boxDiagramText[1].innerHTML = dailyProfit2.innerHTML + "ETH"
+    boxDiagramText[2].innerHTML =  amountProcent2.innerHTML + "/"  + yearAmount2.innerHTML + "ETH";
+    if(customValue2.value > 0 && customRange2.value <5.1){
+    amountProcent2.innerHTML = "+5%"
+    yearAmount2.innerHTML = (result*0.05).toFixed(2);
+    monthProfit2.innerHTML = (result*0.0041).toFixed(2);
+      dailyProfit2.innerHTML = (result*0.00013).toFixed(4);
+      firstProcentWrapper.style.width = (38-customValue2.value)+'%'
+      secondProcentWrapper.style.right = (38-customValue2.value)+'%'
+      thirdProcentWrapper.style.width = '24%'
+      thirdProcentWrapper.style.left = '76%'
+      thirdProcentWrapper.style.transition = "all 2s"
+      premium1.style.display = "none"
+      
+      // firstProcentWrapper.style.transition = "all 3s"
+     // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue2.value == 0){
+    amountProcent2.innerHTML = "+0%"
+    yearAmount2.innerHTML = '0'
+    monthProfit2.innerHTML = '0'
+    dailyProfit2.innerHTML = '0'
+    firstProcentWrapper.style.width = "38%"
+    thirdProcentWrapper.style.width = '28%'
+      thirdProcentWrapper.style.left = '72%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    boxDiagramText[0].innerHTML =  "";
+    boxDiagramText[1].innerHTML = ""
+    boxDiagramText[2].innerHTML =  "";
+    premium1.style.display = "none"
+    // secondChartText1.innerHTML = ' '
+  }
+  else if(customValue2.value >= 5.1 && customRange2.value < 10.1){
+    amountProcent2.innerHTML = "+8,8%"
+    yearAmount2.innerHTML = (result*0.088).toFixed(2)
+    monthProfit2.innerHTML = (result*0.0073).toFixed(2);
+    dailyProfit2.innerHTML = (result*0.00023).toFixed(4);
+    firstProcentWrapper.style.width = ('33'+(customValue2.value/2)-300 + '%')
+    thirdProcentWrapper.style.width = '26%'
+      thirdProcentWrapper.style.left = '74%'
+      thirdProcentWrapper.style.transition = "all 2s"
+      premium1.style.display = "none"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue2.value >= 10.1 && customRange2.value < 15.1){
+    amountProcent2.innerHTML = "+13,4%"
+    yearAmount2.innerHTML = (result*0.134).toFixed(2)
+    monthProfit2.innerHTML = (result*0.0111).toFixed(2);
+    dailyProfit2.innerHTML = (result*0.00035).toFixed(4);
+    firstProcentWrapper.style.width = ('35'+(customValue2.value/2)-320 + '%')
+    thirdProcentWrapper.style.width = '28%'
+      thirdProcentWrapper.style.left = '72%'
+      thirdProcentWrapper.style.transition = "all 2s"
+      premium1.style.display = "none"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue2.value >= 15.1 && customRange2.value < 20.1){
+    amountProcent2.innerHTML = "+18,8%"
+    yearAmount2.innerHTML = (result*0.188).toFixed(2)
+    monthProfit2.innerHTML = (result*0.0156).toFixed(2);
+    dailyProfit2.innerHTML = (result*0.00050).toFixed(4);
+    firstProcentWrapper.style.width = "40"+(customValue2.value/100)-360 + '%'
+    thirdProcentWrapper.style.width = '30%'
+      thirdProcentWrapper.style.left = '70%'
+      thirdProcentWrapper.style.transition = "all 2s"
+      premium1.style.display = "none"
+    
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+    
+      
+    
+   else if(customValue2.value >= 20.1 && customRange2.value < 30.1){
+    amountProcent2.innerHTML = "+22%"
+     yearAmount2.innerHTML = (result*0.22).toFixed(2)
+     monthProfit2.innerHTML = (result*0.0183).toFixed(2);
+     dailyProfit2.innerHTML = (result*0.00059).toFixed(4);
+     firstProcentWrapper.style.width = "40"+(customValue2.value/100)-360 + '%'
+     thirdProcentWrapper.style.width = '32%'
+      thirdProcentWrapper.style.left = '68%'
+      thirdProcentWrapper.style.transition = "all 2s"
+      premium1.style.display = "none"
+     // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue2.value >= 30.1 && customRange2.value <= 31.99){
+    amountProcent2.innerHTML = "+24.5%"
+    yearAmount2.innerHTML = (result*0.245).toFixed(2)
+    monthProfit2.innerHTML = (result*0.0204).toFixed(2);
+    dailyProfit2.innerHTML = (result*0.00065).toFixed(4);
+    thirdProcentWrapper.style.width = '34%'
+      thirdProcentWrapper.style.left = '66%'
+      thirdProcentWrapper.style.transition = "all 2s"
+      premium1.style.display = "none"
+      
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else{
+    amountProcent.innerHTML = "+24.5%"
+    yearAmount.innerHTML = (result*0.245).toFixed(2)
+    monthProfit.innerHTML = (result*0.0204).toFixed(2);
+    dailyProfit.innerHTML = (result*0.00065).toFixed(4);
+    secondChartText.innerHTML = '+' + dailyProfit.innerHTML + 'ETH'
+    premium1.style.display = "block"
+  }
+  
+  })
+  
+  
+  
+})
+customRange1.addEventListener('input', function(){
+  customValue1.value = customRange1.value;
+  // console.log(customValue.value)
+  fetch('https://min-api.cryptocompare.com/data/v2/histoday?fsym=ETH&tsym=USD&limit=1&aggregate=3&e=Kraken&extraParams=your_app_name')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    let result =  customValue1.value
+    rangeValue1.innerHTML = (customValue1.value*data.Data.Data[0].close).toFixed(2) + "USD";
+    // console.log(data.Data.Data)
+    boxDiagramText[0].innerHTML = customValue1.value + "ETH";
+    boxDiagramText[1].innerHTML = dailyProfit1.innerHTML + "ETH"
+    boxDiagramText[1].style.marginLeft = '6em'
+    boxDiagramText[2].innerHTML =  amountProcent1.innerHTML + "/"  + yearAmount1.innerHTML + "ETH";
+    if(customValue1.value > 0 && customRange1.value <5.1){
+    amountProcent1.innerHTML = "+5%"
+    yearAmount1.innerHTML = (result*0.05).toFixed(2);
+    monthProfit1.innerHTML = (result*0.0041).toFixed(2);
+      dailyProfit1.innerHTML = (result*0.00013).toFixed(4);
+      firstProcentWrapper.style.width = (38-customValue1.value)+'%'
+      secondProcentWrapper.style.right = (38-customValue1.value)+'%'
+      thirdProcentWrapper.style.width = '24%'
+      thirdProcentWrapper.style.left = '76%'
+      thirdProcentWrapper.style.transition = "all 2s"
+      
+      // firstProcentWrapper.style.transition = "all 3s"
+     // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue1.value == 0){
+    amountProcent1.innerHTML = "+0%"
+    yearAmount1.innerHTML = '0'
+    monthProfit1.innerHTML = '0'
+    dailyProfit1.innerHTML = '0'
+    firstProcentWrapper.style.width = "38%"
+    thirdProcentWrapper.style.width = '28%'
+      thirdProcentWrapper.style.left = '72%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    boxDiagramText[0].innerHTML =  "";
+    boxDiagramText[1].innerHTML = ""
+    boxDiagramText[2].innerHTML =  "";
+    // secondChartText1.innerHTML = ' '
+  }
+  else if(customValue1.value >= 5.1 && customRange1.value < 10.1){
+    amountProcent1.innerHTML = "+8,8%"
+    yearAmount1.innerHTML = (result*0.088).toFixed(2)
+    monthProfit1.innerHTML = (result*0.0073).toFixed(2);
+    dailyProfit1.innerHTML = (result*0.00023).toFixed(4);
+    firstProcentWrapper.style.width = ('33'+(customValue1.value/2)-300 + '%')
+    thirdProcentWrapper.style.width = '26%'
+      thirdProcentWrapper.style.left = '74%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue1.value >= 10.1 && customRange1.value < 15.1){
+    amountProcent1.innerHTML = "+13,4%"
+    yearAmount1.innerHTML = (result*0.134).toFixed(2)
+    monthProfit1.innerHTML = (result*0.0111).toFixed(2);
+    dailyProfit1.innerHTML = (result*0.00035).toFixed(4);
+    firstProcentWrapper.style.width = ('35'+(customValue1.value/2)-320 + '%')
+    thirdProcentWrapper.style.width = '28%'
+      thirdProcentWrapper.style.left = '72%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue1.value >= 15.1 && customRange1.value < 20.1){
+    amountProcent1.innerHTML = "+18,8%"
+    yearAmount1.innerHTML = (result*0.188).toFixed(2)
+    monthProfit1.innerHTML = (result*0.0156).toFixed(2);
+    dailyProfit1.innerHTML = (result*0.00050).toFixed(4);
+    firstProcentWrapper.style.width = "40"+(customValue1.value/100)-360 + '%'
+    thirdProcentWrapper.style.width = '30%'
+      thirdProcentWrapper.style.left = '70%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+    
+      
+    
+   else if(customValue1.value >= 20.1 && customRange1.value < 30.1){
+    amountProcent1.innerHTML = "+22%"
+     yearAmount1.innerHTML = (result*0.22).toFixed(2)
+     monthProfit1.innerHTML = (result*0.0183).toFixed(2);
+     dailyProfit1.innerHTML = (result*0.00059).toFixed(4);
+     firstProcentWrapper.style.width = "40"+(customValue1.value/100)-360 + '%'
+     thirdProcentWrapper.style.width = '32%'
+      thirdProcentWrapper.style.left = '68%'
+      thirdProcentWrapper.style.transition = "all 2s"
+     // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue1.value >= 30.1 && customRange1.value <= 31.99){
+    amountProcent1.innerHTML = "+24.5%"
+    yearAmount1.innerHTML = (result*0.245).toFixed(2)
+    monthProfit1.innerHTML = (result*0.0204).toFixed(2);
+    dailyProfit1.innerHTML = (result*0.00065).toFixed(4);
+    thirdProcentWrapper.style.width = '34%'
+      thirdProcentWrapper.style.left = '66%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else{
+    amountProcent.innerHTML = "+24.5%"
+    yearAmount.innerHTML = (result*0.245).toFixed(2)
+    monthProfit.innerHTML = (result*0.0204).toFixed(2);
+    dailyProfit.innerHTML = (result*0.00065).toFixed(4);
+    secondChartText.innerHTML = '+' + dailyProfit.innerHTML + 'ETH'
+  }
+  
+  })
+  
+  
+  
+  
+})
+customValue2.addEventListener('input',function(){
+  
+  fetch('https://min-api.cryptocompare.com/data/v2/histoday?fsym=ETH&tsym=USD&limit=1&aggregate=3&e=Kraken&extraParams=your_app_name')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    let result =  customValue2.value
+    boxDiagramText[1].style.marginLeft = '6em'
+    rangeValue2.innerHTML = (customValue.value*data.Data.Data[0].close).toFixed(2) + "USD";
+    customRange2.value = customValue2.value
+    
+    
+    // customValue.value = (rangeValue.innerHtml/data.Data.Data[0].close).toFixed(5);
+    if(customValue2.value > 32){
+      rangeValue2.innerHTML = '0'
+      customValue2.value = ' ';
+      customRange2.value = 0
+      amountProcent2.innerHTML = "+0%"
+      // secondChartText1.innerHTML = ' '
+      
+    }
+    
+  
+    
+    // console.log(data.Data.Data)
+  })
+  fetch('https://min-api.cryptocompare.com/data/v2/histoday?fsym=ETH&tsym=USD&limit=1&aggregate=3&e=Kraken&extraParams=your_app_name')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+     let result =  customValue2.value
+    rangeValue2.innerHTML = (customValue.value*data.Data.Data[0].close).toFixed(2) + "USD";
+    // console.log(data.Data.Data)
+    boxDiagramText[0].innerHTML = customValue2.value + "ETH";
+    boxDiagramText[1].innerHTML = dailyProfit2.innerHTML + "ETH"
+    boxDiagramText[2].innerHTML =  amountProcent2.innerHTML + "/"  + yearAmount2.innerHTML + "ETH";
+    if(customValue2.value > 0 && customRange2.value <5.1){
+    amountProcent2.innerHTML = "+5%"
+    yearAmount2.innerHTML = (result*0.05).toFixed(2);
+    monthProfit2.innerHTML = (result*0.0041).toFixed(2);
+      dailyProfit2.innerHTML = (result*0.00013).toFixed(2);
+      firstProcentWrapper.style.width = (38-customValue2.value)+'%'
+      secondProcentWrapper.style.right = (38-customValue2.value)+'%'
+      thirdProcentWrapper.style.width = '24%'
+      thirdProcentWrapper.style.left = '76%'
+      thirdProcentWrapper.style.transition = "all 2s"
+      
+      // firstProcentWrapper.style.transition = "all 3s"
+     // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue2.value == 0){
+    amountProcent2.innerHTML = "+0%"
+    yearAmount2.innerHTML = '0'
+    monthProfit2.innerHTML = '0'
+    dailyProfit2.innerHTML = '0'
+    firstProcentWrapper.style.width = "38%"
+    thirdProcentWrapper.style.width = '28%'
+      thirdProcentWrapper.style.left = '72%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = ' '
+  }
+  else if(customValue2.value >= 5.1 && customRange2.value < 10.1){
+    amountProcent2.innerHTML = "+8,8%"
+    yearAmount2.innerHTML = (result*0.088).toFixed(2)
+    monthProfit2.innerHTML = (result*0.0073).toFixed(2);
+    dailyProfit2.innerHTML = (result*0.00023).toFixed(2);
+    firstProcentWrapper.style.width = ('33'+(customValue2.value/2)-300 + '%')
+    thirdProcentWrapper.style.width = '26%'
+      thirdProcentWrapper.style.left = '74%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue2.value >= 10.1 && customRange2.value < 15.1){
+    amountProcent2.innerHTML = "+13,4%"
+    yearAmount2.innerHTML = (result*0.134).toFixed(2)
+    monthProfit2.innerHTML = (result*0.0111).toFixed(2);
+    dailyProfit2.innerHTML = (result*0.00035).toFixed(2);
+    firstProcentWrapper.style.width = ('35'+(customValue2.value/2)-320 + '%')
+    thirdProcentWrapper.style.width = '28%'
+      thirdProcentWrapper.style.left = '72%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue2.value >= 15.1 && customRange2.value < 20.1){
+    amountProcent2.innerHTML = "+18,8%"
+    yearAmount2.innerHTML = (result*0.188).toFixed(2)
+    monthProfit2.innerHTML = (result*0.0156).toFixed(2);
+    dailyProfit2.innerHTML = (result*0.00050).toFixed(2);
+    firstProcentWrapper.style.width = "40"+(customValue2.value/100)-360 + '%'
+    thirdProcentWrapper.style.width = '30%'
+      thirdProcentWrapper.style.left = '70%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+    
+      
+    
+   else if(customValue2.value >= 20.1 && customRange2.value < 30.1){
+    amountProcent2.innerHTML = "+22%"
+     yearAmount2.innerHTML = (result*0.22).toFixed(2)
+     monthProfit2.innerHTML = (result*0.0183).toFixed(2);
+     dailyProfit2.innerHTML = (result*0.00059).toFixed(2);
+     firstProcentWrapper.style.width = "40"+(customValue2.value/100)-360 + '%'
+     thirdProcentWrapper.style.width = '32%'
+      thirdProcentWrapper.style.left = '68%'
+      thirdProcentWrapper.style.transition = "all 2s"
+     // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue2.value >= 30.1 && customRange2.value <= 31.99){
+    amountProcent2.innerHTML = "+24.5%"
+    yearAmount2.innerHTML = (result*0.245).toFixed(2)
+    monthProfit2.innerHTML = (result*0.0204).toFixed(2);
+    dailyProfit2.innerHTML = (result*0.00065).toFixed(4);
+    thirdProcentWrapper.style.width = '34%'
+      thirdProcentWrapper.style.left = '66%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else{
+    amountProcent.innerHTML = "+24.5%"
+    yearAmount.innerHTML = (result*0.245).toFixed(2)
+    monthProfit.innerHTML = (result*0.0204).toFixed(2);
+    dailyProfit.innerHTML = (result*0.00065).toFixed(4);
+    secondChartText.innerHTML = '+' + dailyProfit.innerHTML + 'ETH' 
+  }
+  
+  })
+  
+
+  
+  
+})
+customValue1.addEventListener('input',function(){
+  
+  fetch('https://min-api.cryptocompare.com/data/v2/histoday?fsym=ETH&tsym=USD&limit=1&aggregate=3&e=Kraken&extraParams=your_app_name')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    let result =  customValue1.value
+    boxDiagramText[1].style.marginLeft = '6em'
+    rangeValue1.innerHTML = (customValue.value*data.Data.Data[0].close).toFixed(2) + "USD";
+    customRange1.value = customValue1.value
+    
+    
+    // customValue.value = (rangeValue.innerHtml/data.Data.Data[0].close).toFixed(5);
+    if(customValue1.value > 32){
+      rangeValue1.innerHTML = '0'
+      customValue1.value = ' ';
+      customRange1.value = 0
+      amountProcent1.innerHTML = "+0%"
+      // secondChartText1.innerHTML = ' '
+      
+    }
+    
+  
+    
+    // console.log(data.Data.Data)
+  })
+  fetch('https://min-api.cryptocompare.com/data/v2/histoday?fsym=ETH&tsym=USD&limit=1&aggregate=3&e=Kraken&extraParams=your_app_name')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+     let result =  customValue1.value
+    rangeValue1.innerHTML = (customValue.value*data.Data.Data[0].close).toFixed(2) + "USD";
+    // console.log(data.Data.Data)
+    boxDiagramText[0].innerHTML = customValue1.value + "ETH";
+    boxDiagramText[1].innerHTML = dailyProfit1.innerHTML + "ETH"
+    boxDiagramText[2].innerHTML =  amountProcent1.innerHTML + "/"  + yearAmount1.innerHTML + "ETH";
+    if(customValue1.value > 0 && customRange1.value <5.1){
+    amountProcent1.innerHTML = "+5%"
+    yearAmount1.innerHTML = (result*0.05).toFixed(2);
+    monthProfit1.innerHTML = (result*0.0041).toFixed(2);
+      dailyProfit1.innerHTML = (result*0.00013).toFixed(2);
+      firstProcentWrapper.style.width = (38-customValue1.value)+'%'
+      secondProcentWrapper.style.right = (38-customValue1.value)+'%'
+      thirdProcentWrapper.style.width = '24%'
+      thirdProcentWrapper.style.left = '76%'
+      thirdProcentWrapper.style.transition = "all 2s"
+      
+      // firstProcentWrapper.style.transition = "all 3s"
+     // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue1.value == 0){
+    amountProcent1.innerHTML = "+0%"
+    yearAmount1.innerHTML = '0'
+    monthProfit1.innerHTML = '0'
+    dailyProfit1.innerHTML = '0'
+    firstProcentWrapper.style.width = "38%"
+    thirdProcentWrapper.style.width = '28%'
+      thirdProcentWrapper.style.left = '72%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = ' '
+  }
+  else if(customValue1.value >= 5.1 && customRange1.value < 10.1){
+    amountProcent1.innerHTML = "+8,8%"
+    yearAmount1.innerHTML = (result*0.088).toFixed(2)
+    monthProfit1.innerHTML = (result*0.0073).toFixed(2);
+    dailyProfit1.innerHTML = (result*0.00023).toFixed(2);
+    firstProcentWrapper.style.width = ('33'+(customValue1.value/2)-300 + '%')
+    thirdProcentWrapper.style.width = '26%'
+      thirdProcentWrapper.style.left = '74%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue1.value >= 10.1 && customRange1.value < 15.1){
+    amountProcent1.innerHTML = "+13,4%"
+    yearAmount1.innerHTML = (result*0.134).toFixed(2)
+    monthProfit1.innerHTML = (result*0.0111).toFixed(2);
+    dailyProfit1.innerHTML = (result*0.00035).toFixed(2);
+    firstProcentWrapper.style.width = ('35'+(customValue1.value/2)-320 + '%')
+    thirdProcentWrapper.style.width = '28%'
+      thirdProcentWrapper.style.left = '72%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue1.value >= 15.1 && customRange1.value < 20.1){
+    amountProcent1.innerHTML = "+18,8%"
+    yearAmount1.innerHTML = (result*0.188).toFixed(2)
+    monthProfit1.innerHTML = (result*0.0156).toFixed(2);
+    dailyProfit1.innerHTML = (result*0.00050).toFixed(2);
+    firstProcentWrapper.style.width = "40"+(customValue1.value/100)-360 + '%'
+    thirdProcentWrapper.style.width = '30%'
+      thirdProcentWrapper.style.left = '70%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+    
+      
+    
+   else if(customValue1.value >= 20.1 && customRange1.value < 30.1){
+    amountProcent1.innerHTML = "+22%"
+     yearAmount1.innerHTML = (result*0.22).toFixed(2)
+     monthProfit1.innerHTML = (result*0.0183).toFixed(2);
+     dailyProfit1.innerHTML = (result*0.00059).toFixed(4);
+     firstProcentWrapper.style.width = "40"+(customValue1.value/100)-360 + '%'
+     thirdProcentWrapper.style.width = '32%'
+      thirdProcentWrapper.style.left = '68%'
+      thirdProcentWrapper.style.transition = "all 2s"
+     // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else if(customValue1.value >= 30.1 && customRange1.value <= 31.99){
+    amountProcent1.innerHTML = "+24.5%"
+    yearAmount1.innerHTML = (result*0.245).toFixed(2)
+    monthProfit1.innerHTML = (result*0.0204).toFixed(2);
+    dailyProfit1.innerHTML = (result*0.00065).toFixed(4);
+    thirdProcentWrapper.style.width = '34%'
+      thirdProcentWrapper.style.left = '66%'
+      thirdProcentWrapper.style.transition = "all 2s"
+    // secondChartText1.innerHTML = '+' + dailyProfit1.innerHTML + 'ETH'
+  }
+  else{
+    amountProcent.innerHTML = "+24.5%"
+    yearAmount.innerHTML = (result*0.245).toFixed(2)
+    monthProfit.innerHTML = (result*0.0204).toFixed(2);
+    dailyProfit.innerHTML = (result*0.00065).toFixed(4);
+    secondChartText.innerHTML = '+' + dailyProfit.innerHTML + 'ETH' 
+  }
+  
+  })
+  
+
+  
+  
+})
+const ABI = [{"inputs":[{"internalType":"uint256","name":"maxNumberOfPeriods_","type":"uint256"},{"internalType":"uint256","name":"rewardPeriodDuration_","type":"uint256"},{"internalType":"uint256","name":"periodsForExtraReward_","type":"uint256"},{"internalType":"uint256","name":"extraRewardMultiplier_","type":"uint256"},{"internalType":"uint256","name":"cooldown_","type":"uint256"},{"internalType":"uint256","name":"earlyWithdrawalFee_","type":"uint256"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"stakeholder_","type":"address"},{"indexed":false,"internalType":"bool","name":"active_","type":"bool"}],"name":"Active","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"field_","type":"string"},{"indexed":false,"internalType":"uint256","name":"value_","type":"uint256"}],"name":"ConfigUpdate","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"stakeholder_","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount_","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"releaseDate_","type":"uint256"}],"name":"InitiateWithdraw","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"stakeholder_","type":"address"},{"indexed":false,"internalType":"uint256","name":"reward_","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"lockedReward_","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"numberOfPeriods_","type":"uint256"}],"name":"Rewarding","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"stakeholder_","type":"address"},{"indexed":false,"internalType":"uint256","name":"stake_","type":"uint256"}],"name":"Staking","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"stakeholder_","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount_","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"fee_","type":"uint256"}],"name":"Withdraw","type":"event"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"uint256","name":"weight","type":"uint256"},{"internalType":"bytes","name":"signature","type":"bytes"}],"name":"_recoverSigner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"_totalLockedRewards","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"stakeholderAddress","type":"address"}],"name":"activeStakeholder","outputs":[{"internalType":"bool","name":"active","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"calculateRewardPerPeriod","outputs":[{"internalType":"uint256","name":"rewardPerPeriod","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"stakeholderAddress","type":"address"},{"internalType":"uint256","name":"endPeriod","type":"uint256"}],"name":"calculateRewards","outputs":[{"internalType":"uint256","name":"reward","type":"uint256"},{"internalType":"uint256","name":"lockedRewards","type":"uint256"},{"components":[{"internalType":"uint256","name":"stakingBalance","type":"uint256"},{"internalType":"uint256","name":"weight","type":"uint256"},{"internalType":"uint256","name":"startDate","type":"uint256"},{"internalType":"uint256","name":"lastClaimed","type":"uint256"},{"internalType":"uint256","name":"newStake","type":"uint256"},{"internalType":"uint256","name":"lockedRewards","type":"uint256"},{"internalType":"bool","name":"unlockToken","type":"bool"},{"components":[{"internalType":"uint256","name":"releaseDate","type":"uint256"},{"internalType":"uint256","name":"releaseAmount","type":"uint256"}],"internalType":"struct StakingContract.Withdrawal[]","name":"withdrawals","type":"tuple[]"}],"internalType":"struct StakingContract.StakeHolder","name":"stakeholder","type":"tuple"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"endPeriod","type":"uint256"},{"internalType":"bool","name":"withdraw","type":"bool"}],"name":"claimRewards","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"stakeholders_","type":"address[]"}],"name":"claimRewardsAsOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"cooldown","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"currentPeriod","outputs":[{"internalType":"uint256","name":"period","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimalPrecision","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"earlyWithdrawalFee","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"},{"internalType":"address","name":"stakeholderAddress","type":"address"}],"name":"getWithdrawal","outputs":[{"internalType":"uint256","name":"releaseDate","type":"uint256"},{"internalType":"uint256","name":"releaseAmount","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"stakeholderAddress","type":"address"}],"name":"getWithdrawalLength","outputs":[{"internalType":"uint256","name":"length","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"handleDecreasingMaxWeight","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"endPeriod","type":"uint256"}],"name":"handleNewPeriod","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"weight_","type":"uint256"},{"internalType":"bytes","name":"signature","type":"bytes"}],"name":"increaseWeight","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"latestRewardPeriod","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"maxNumberOfPeriods","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"periodsForExtraReward","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"bool","name":"instant","type":"bool"},{"internalType":"bool","name":"claimRewardsFirst","type":"bool"}],"name":"requestWithdrawal","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"rewardPeriodDuration","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"rewardPeriods","outputs":[{"internalType":"uint256","name":"rewardPerPeriod","type":"uint256"},{"internalType":"uint256","name":"extraRewardMultiplier","type":"uint256"},{"internalType":"uint256","name":"maxWeight","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_sigAdd","type":"address"}],"name":"setSigAdd","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"signatureAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"value","type":"address"}],"name":"signatureFailover","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"stake","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"stakeholders","outputs":[{"internalType":"uint256","name":"stakingBalance","type":"uint256"},{"internalType":"uint256","name":"weight","type":"uint256"},{"internalType":"uint256","name":"startDate","type":"uint256"},{"internalType":"uint256","name":"lastClaimed","type":"uint256"},{"internalType":"uint256","name":"newStake","type":"uint256"},{"internalType":"uint256","name":"lockedRewards","type":"uint256"},{"internalType":"bool","name":"unlockToken","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"startDate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"weightExponent","type":"uint256"}],"name":"totalLockedRewards","outputs":[{"internalType":"uint256","name":"totalLocked","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"weightExponent","type":"uint256"}],"name":"totalNewStake","outputs":[{"internalType":"uint256","name":"totalNew","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"period","type":"uint256"},{"internalType":"uint256","name":"weightExponent","type":"uint256"}],"name":"totalStakingBalance","outputs":[{"internalType":"uint256","name":"totalStaking","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"value","type":"uint256"}],"name":"updateCoolDownPeriod","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"value","type":"uint256"}],"name":"updateEarlyWithdrawalFee","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"value","type":"uint256"}],"name":"updateExtraRewardMultiplier","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"value","type":"uint256"}],"name":"updateMaxNumberOfPeriods","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"value","type":"address"}],"name":"updateSignatureAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"stakeholders_","type":"address[]"},{"internalType":"uint256[]","name":"weights_","type":"uint256[]"}],"name":"updateWeightBatch","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"weightCounts","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"withdrawalId","type":"uint256"}],"name":"withdrawFunds","outputs":[],"stateMutability":"nonpayable","type":"function"}]
+const Address = '0x278a022F6bfCd41DbaD0fe0133Cb5702C07f28d1';
+
+var account = null;
+var contract = null;
+var amount = null;
+var price = null;
+
+(async () => {
+  if (window.ethereum) {
+      await window.ethereum.send('eth_requestAccounts')
+      window.web3 = new Web3(window.ethereum)
+      var accounts = await web3.eth.getAccounts();
+      account = accounts[0];
+  }
+})();
+
+document.getElementById('stake-button').onclick = async () => { 
+  var result = customValue.value
+  contract = new web3.eth.Contract(ABI, Address);
+  if (window.ethereum) 
+    {
+      contract.methods.stake().send({ from: account, value: result*10^18 });
+    }
+}
+
+  navSecondButton.addEventListener('click', function(){
+    window.location.href = 'sideNav2.html';
+  })
+  stakingButton.addEventListener('click',function(){
+    if (document.location.href.indexOf('deposit') != -1) {
+    $("#myModal").modal('show');
+}
+  })
+
+</script>
+<script>
+    // ether price
+        fetch('https://api.etherscan.io/api?module=stats&action=ethprice&apikey=NHXUX3WHZRSQWKY7XV4MRXXIJP8HXEZQQG')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+          document.getElementById("ether_price_bottom").innerHTML = data.result.ethusd+'$';
+          document.getElementById("text-for-bottom_price").innerHTML = data.result.ethusd+'$';
+      });
+    
+  </script>
+  <script>
+    // Gaz price
+        fetch('https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=NHXUX3WHZRSQWKY7XV4MRXXIJP8HXEZQQG')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+          document.getElementById("MAD_GAS_PRICE_bottom").innerHTML = data.result.ProposeGasPrice;
+          document.getElementById("text-for-bottom_gas").innerHTML = data.result.ProposeGasPrice;
+      });
+    
+  </script>
+  
+  <script>
+        fetch('https://api.etherscan.io/api?module=stats&action=ethsupply2&apikey=NHXUX3WHZRSQWKY7XV4MRXXIJP8HXEZQQG')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+          document.getElementById("market_cup_bottom").innerHTML = (data.result.EthSupply / Math.pow(10, 18)).toFixed(2);
+          document.getElementById("text-for-bottom_cap").innerHTML = (data.result.EthSupply / Math.pow(10, 18)).toFixed(2);
+      });
+    
+  </script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+
+
+    <script src="js/theme.js"></script>
+
+
+
+
+
+</body>

@@ -1,0 +1,2730 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="color-scheme" content="light dark">
+  <link rel="shortcut icon" href="photo/bezprobelov.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Phoenix - Official site</title>
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="dark-mode.css">
+  <style>
+    @import url(https://rsms.me/inter/inter.css);
+
+    html {
+      font-family: Inter, sans-serif
+    }
+
+    @supports (font-variation-settings:normal) {
+      html {
+        font-family: 'Inter var', sans-serif
+      }
+    }
+
+    body {
+      width: 100%
+    }
+  </style>
+  <script defer="defer" src="./static/js/main.4f7f6943.js"></script>
+  <link href="./static/css/main.45d4a2d1.css" rel="stylesheet">
+  <script scr="js/cookie.js"></script>
+</head>
+
+<body class="light-theme" id="body">
+  <div class="closer" id="closer"></div>
+  <nav class="navbar navbar-expand-md fixed-top" id="dark-box1" style="position:fixed">
+    <div class="container"><a class="navbar-brand" type="button" href="index.html"><img src="photo/Group 9.png"
+          alt=""></a><button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        onclick="openSecondNav(mySidenav)" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+          style="color:#d2d2f9" class="fas fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navbar-supported-content">
+        <div class="Ether_price" style="border-right:1px solid;padding-right:5%"><span id="ether_price"
+            style="padding:0">ETHER PRICE</span>
+          <div class="text_ether_price_bottom"><span class="navbar-text" id="ether_price_bottom">ETHER PRICE</span>
+          </div>
+        </div>
+        <div class="text_MAD_GAS_PRICE" style="border-right:1px solid;padding-right:5%"><span id="MAD_GAS_PRICE"
+            style="padding:0">MAD GAS PRICE</span>
+          <div class="text_MAD_GAS_PRICE_bottom"><span class="navbar-text" id="MAD_GAS_PRICE_bottom">MAD GAS
+              PRICE</span></div>
+        </div>
+        <div class="text_market_cup"><span id="market_cup">MARKET CUP</span>
+          <div class="text_market_cup_bottom"><span class="navbar-text" id="market_cup_bottom">MARKET CUP</span></div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div id="MobileHideNav" class="container-fluid row align-items-center justify-content-end"
+          style="vertical-align:middle">
+          <div id="wallet-for-m2" class="col-5 search-wrapper"></div>
+          <div class="nav-link col-2 d-flex" style="justify-content:flex-end"><label
+              class="theme-button custom-control-label" for="" id="theme-button"></label></div><a href="#"
+            id="lang-button" class="nav-link col-3 d-flex LangStyle" type="button"
+            style="justify-content:flex-end;width:100px;margin-left:2%;color:#333"><img src="photo/Globe.png" id="globe"
+              alt="">Languages</a>
+        </div>
+      </div>
+    </div>
+    <div class="grafic-wrapper" id="grafic-wrapper">
+      <div class="grafic-button">
+        <div id="myModal" class="modal-window">
+          <div class="modal-content-window">
+            <div class="grafic"><canvas id="myChart"></canvas></div>
+          </div>
+        </div><img class="grafic-row" alt="" src="photo/row.png" />
+      </div>
+    </div>
+  </nav>
+  <div class="main-wrapper">
+    <div class="container-lg d-none" style="position:relative;z-index:100" id="search-menu">
+      <div class="searchmenu"
+        style="position:absolute;right:0;background:#000;width:345px;max-height:295px;overflow-y:auto">
+        <div class="shower px-1" id="search-result"></div>
+      </div>
+    </div>
+    <section class="d-flex justify-content-center bg-img" id="bg-img">
+      <div class="container row">
+        <div class="col-12 col-lg-6 order-lg-2">
+          <center><img class="imgFlex" alt="" src="photo/rthrth.png"></center>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="box_shadow" id="box-shadow">
+            <div class="rectangle9 dark-box" id="dark-box">
+              <p id="mobstyle"
+                style="font-family:Inter;font-style:normal;font-weight:400;font-size:15px;line-height:26px;color:#787878;margin-top:2em;padding-top:1em;padding-left:2em">
+                UPGRADES / <a style="color:#00f" href="">MERGE</a></p>
+              <h1 id="mobiletextMerge"
+                style="font-family:Inter;font-style:normal;font-weight:700;font-size:39px;line-height:47px;padding-left:.7em">
+                The Merge</h1>
+              <ul>
+                <li>
+                  <p class="form-text">Ethereum is moving to proof-of-stake! The transition, known as The Merge, must
+                    first be activated on the Beacon Chain with the Bellatrix upgrade. After this, the proof-of-work
+                    chain will migrate to proof-of-stake upon hitting a specific Total Difficulty value.</p>
+                </li>
+                <li>
+                  <p class="form-text">The Bellatrix upgrade is scheduled for epoch 144896 on the Beacon Chain --
+                    11:34:47am UTC on Sept 6, 2022.</p>
+                </li>
+                <li>
+                  <p class="form-text">The Terminal Total Difficulty value triggering The Merge is
+                    58750000000000000000000, expected between Sept 10-20, 2022.</p>
+                </li>
+                <li>
+                  <p class="form-text">Note: as announced earlier, the Kiln testnet is being sunset. Operators will shut
+                    down on September 6, 2022.</p>
+                </li>
+              </ul>
+              <div class="form-row-child"></div>
+              <div class="form-last-text-wrapper">
+                <p class="form-last-text">Page last updated: August 30, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-flex justify-content-center" id="second-section">
+      <div class="container row">
+        <div class="col-12 col-lg-6">
+          <h1 id="text-for-mobile-ether"
+            style="margin-top:5%;font-family:Inter;font-style:normal;font-weight:700;font-size:25px;line-height:30px">
+            What do I need to do as an<br>Ethereum user or Ethereum holder?</h1>
+          <p id="text-for-mobile-ether-p"
+            style="font-family:Inter;font-style:normal;font-weight:400;font-size:15px;line-height:26px;max-width:95%">
+            Whether you use Ethereum applications on the network, keep Ethereum on an exchange or in a self-hosted
+            wallet, you don't have to do anything. If the app, exchange, or wallet you are using offers additional
+            instructions or recommendations, you need to make sure they actually come from them. Beware of scammers!
+            There are currently 2 ways to receive staking rewards starting from 1ETH</p>
+          <div class="sticky-top">
+            <div class="text-in-ether-box" id="profita-text">Profitability Calculator</div>
+            <div class="ether_box2 sticky-top" id="ether-box-2">
+              <div class="ether_box your-holdings" id="dark-box2">
+                <div class="col-2 form-of-eth-1" style="margin-left:40%" id="second-ether-img"><img alt=""
+                    class="mx-auto" src="photo/Etherium.png"></div>
+                <div class="col-2 form-of-eth-1" style="margin-left:43%" id="ETH-text-2">
+                  <p
+                    style="font-family:Inter;font-style:normal;font-weight:700;font-size:20px;line-height:24px;color:#787878">
+                    ETH</p>
+                </div>
+                <div class="container-fluid row ether_box_in" style="margin-left:2.5%;width:95%;margin-top:1em"
+                  id="ether-box-in">
+                  <div class="col-5" id="your-holdings">
+                    <p class="your-holdings" style="color:#8c8cf5">Your holdings<br><br><input id="custom-value"
+                        value="0" type="number"
+                        style="font-family:Inter;font-style:normal;font-weight:600;font-size:22px;line-height:27px;color:#787878;background:0 0;border:none;outline:0" />
+                    </p>
+                  </div>
+                  <div class="col-2" id="value-for-fix">
+                    <p id="value-text-for-fix"
+                      style="font-family:Inter;font-weight:500;font-size:14px;line-height:17px;margin-top:6%;margin-right:3%;direction:rtl;color:#8c8cf5">
+                      Value<br><br><span
+                        style="font-family:Inter;font-style:normal;font-weight:600;font-size:22px;line-height:27px;color:#787878"
+                        id="range-value">0</span></p>
+                  </div>
+                  <div class="col-2 form-of-eth" style="border-left:1px solid #d2d2f9" id="etherium-form"><img
+                      class="mx-auto" src="photo/Etherium.png" alt=""></div>
+                  <div class="col-2 form-of-eth" style="margin-top:1.5em" id="ETH-text-1">
+                    <p
+                      style="font-family:Inter;font-style:normal;font-weight:700;font-size:20px;line-height:24px;color:#787878">
+                      ETH</p>
+                  </div><input type="range" class="form-range" max="32" step="0.05" min="0" value="0"
+                    id="customRange1" />
+                </div>
+                <div class="container-fluid row" style="margin-top:2em">
+                  <p class="col-3 calc-text" style="color:#8c8cf5">Daily Profit</p>
+                  <p class="col-3 calc-text"
+                    style="display:flex;flex-direction:row;justify-content:center;color:#8c8cf5">Monthly Profit</p>
+                  <p class="col-3 calc-text"
+                    style="display:flex;flex-direction:row;justify-content:center;color:#8c8cf5">Yearly Profit</p>
+                  <p class="col-3 calc-text" style="display:flex;flex-direction:row-reverse;color:#8c8cf5;">Yearly yield
+                  </p>
+                </div>
+                <div class="container-fluid row">
+                  <p class="col-3 profit-text"
+                    style="font-family:Inter;font-style:normal;font-weight:600;font-size:16px;flex-direction:column;display:flex;line-heigt:19px;color:#787878"
+                    id="daily-profit">0</p>
+                  <p class="col-3 profit-text"
+                    style="font-family:Inter;font-style:normal;font-weight:600;font-size:16px;flex-direction:column;display:flex;align-items:center;line-height:19px;color:#787878"
+                    id="month-profit">0</p>
+                  <p class="col-3 profit-text"
+                    style="font-family:Inter;font-style:normal;font-weight:600;font-size:16px;display:flex;flex-direction:column;align-items:center;line-height:19px;color:#787878"
+                    id="year-amount">0</p>
+                  <p class="col-3 profit-text"
+                    style="font-family:Inter;font-style:normal;font-weight:600;font-size:16px;flex-direction:column;display:flex;align-items:flex-end;line-height:19px;color:#787878"
+                    id="amount-procent">+0%</p>
+                </div>
+                <div class="container-fluid row" id="launch-button-wrapper"><button data-mdb-toggle="modal"
+                    data-mdb-target="#exampleModal" id="launch-app-button" class="launch-app-button"
+                    style="border:1px solid #787878;border-radius:3px;height:3em"><span
+                      style="font-family:Inter;font-style:normal;font-weight:600;font-size:14px;line-height:17px">Launch
+                      App</span></button> <button data-mdb-toggle="modal" data-mdb-target="#Lastbutton"
+                    id="launch-app-button1" class="launch-app-button"
+                    style="border:1px solid #787878;border-radius:3px;height:3em;display:none"><span
+                      style="font-family:Inter;font-style:normal;font-weight:600;font-size:14px;line-height:17px">Launch
+                      App</span></button> </div>
+              </div>
+              <div class="grafic1" id="grafic1"><canvas id="myChart2"></canvas></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 bg-991px">
+          <h1 id="text-for-mobile-ether1" class="test_text"
+            style="margin-top:5%;font-family:Inter;font-style:normal;font-weight:700;font-size:25px;line-height:30px">
+            Background</h1>
+          <p id="text-for-mobile-ether-p1"
+            style="font-family:Inter;font-style:normal;font-weight:400;font-size:15px;line-height:26px">Following years
+            of hard work, Ethereum's proof-of-stake upgrade is finally here! The successful upgrade of all public
+            testnets is now complete, and The Merge has been scheduled for the Ethereum mainnet.<br>The Merge is
+            different from previous network upgrades in two ways. First, node operators need to update both their
+            consensus layer (CL) and execution layer (EL) clients in tandem, rather than just one of the two. Second,
+            the upgrade activates in two phases: the first, named Bellatrix, at an epoch height on the Beacon Chain, and
+            the second, named Paris, upon hitting a Total Difficulty value on the execution layer.</p>
+          <div class="row col-12 darkmode-ignore"><img class="darkmode-ignore" alt="" src="photo/214 1.png"></div>
+          <h1 id="text-for-mobile-ether2"
+            style="margin-top:2%;font-family:Inter;font-style:normal;font-weight:700;font-size:25px;line-height:30px">What do I need to do for staking?</h1>
+          <p id="text-for-mobile-ether-p2"
+            style="font-family:Inter;font-style:normal;font-weight:400;font-size:15px;line-height:26px">As explained above,
+            validators on the Beacon Chain will need to run a post-merge runtime client in addition to their consensus
+            clients. This was highly recommended before the merge, but some validators have outsourced these features to
+            third parties. This was possible because the only data required at the executive level were updates to the
+            deposit contract.<br><br>After the merge, validators must ensure that the user transactions and the state
+            transition blocks they create and validate are valid. To do this, each beacon node must be associated with a
+            runtime client. Note that multiple validators can still be associated with the same beacon node and run
+            level client combo. This expands the responsibilities of validators, but also entitles the validator that
+            proposes a block to the associated transaction priority fees (which currently go to miners).<br><br>While
+            the validator reward still accumulates on the Beacon Chain and will require a subsequent network upgrade to
+            be withdrawn, the transaction fee will be paid, burned and distributed at the execution level. Validators
+            can specify any Ethereum address as the recipient of the transaction fee.<br><br>After updating your
+            consensus client, be sure to set the fee recipient in your validator client settings to ensure that the
+            transaction fee is sent to an address you control. If you have placed a bet using a third party provider,
+            the provider you choose must specify how these fees are distributed. If you have made a deposit on this
+            site, you do not need to do anything else.</p>
+          <h1 id="text-for-mobile-ether3"
+            style="font-family:Inter;font-style:normal;font-weight:700;font-size:39px;line-height:47px">Last transaction
+          </h1>
+          <div class="row col-12" style="margin-left:.2em" id="lastrans">
+            <div class="box_size" style="display:flex">
+              <div class="row col-3">
+                <div class="row">
+                  <div class="d-flex" style="margin-bottom:1em">
+                    <p class="col-3" style="padding-left:50%;padding-right:40%">Data</p>
+                    <p class="col-3" style="padding-left:50%;padding-right:40%">From</p>
+                    <p class="col-3" style="margin-left:50%;padding-right:40%">To</p>
+                    <p class="col-3" style="margin-left:50%;padding-right:40%">Amount</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box_size1" style="margin-bottom:.5em;display:flex">
+              <div class="row col-3">
+                <div class="row">
+                  <div class="d-flex" style="margin-bottom:3em">
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">Data</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">From</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">To</p>
+                    <p class="col-3 transtext" style="margin-left:50%">Amount</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box_size2" style="margin-bottom:.5em;display:flex">
+              <div class="row col-3">
+                <div class="row">
+                  <div class="d-flex" style="margin-bottom:3em">
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">Data</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">From</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">To</p>
+                    <p class="col-3 transtext" style="margin-left:50%">Amount</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box_size3" style="margin-bottom:.5em;display:flex">
+              <div class="row col-3">
+                <div class="row">
+                  <div class="d-flex" style="margin-bottom:3em">
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">Data</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">From</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">To</p>
+                    <p class="col-3 transtext" style="margin-left:50%">Amount</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box_size4" style="margin-bottom:.5em;display:flex">
+              <div class="row col-3">
+                <div class="row">
+                  <div class="d-flex" style="margin-bottom:3em">
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">Data</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">From</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">To</p>
+                    <p class="col-3 transtext" style="margin-left:50%">Amount</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box_size5" style="margin-bottom:.5em;display:flex">
+              <div class="row col-3">
+                <div class="row">
+                  <div class="d-flex" style="margin-bottom:3em">
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">Data</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">From</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">To</p>
+                    <p class="col-3 transtext" style="margin-left:50%">Amount</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box_size6" style="margin-bottom:.5em;display:flex">
+              <div class="row col-3">
+                <div class="row">
+                  <div class="d-flex" style="margin-bottom:3em">
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">Data</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">From</p>
+                    <p class="col-3 transtext" style="margin-left:50%;padding-right:40%">To</p>
+                    <p class="col-3 transtext" style="margin-left:50%">Amount</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <div class="container">
+      <div class="row" style="height:125px">
+        <div class="col-4 d-flex justify-content-center"><label class="custom-control-label theme-button"
+            style="width:28px;height:28px;margin-top:3.5em" for="" id="theme-button-1"></label></div>
+        <div class="col-4 d-flex justify-content-center"><img alt="" src="photo/Etherforsidenav.png"></div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="buttonsliderMobile mt-5"><button class="navbar-toggler buttonslider" type="button"
+              data-mdb-toggle="collapse" onclick="openSecondNav(mySidenav)" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation" style="width:44px;height:44px"><i
+                style="color:#d2d2f9" class="fas fa-bars"></i></button></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row mt-5">
+          <div id="text-for-upper" class="col-4 d-flex justify-content-center second-nav-text">ETHER PRICE</div>
+          <div id="text-for-upper1" class="col-4 d-flex justify-content-center second-nav-text">MED GAS PRICE<br></div>
+          <div id="text-for-upper2" class="col-4 d-flex justify-content-center second-nav-text">MARKET CAP</div>
+        </div>
+        <div class="row">
+          <div id="text-for-bottom_price" class="col-4 d-flex justify-content-center">ETHER PRICE</div>
+          <div id="text-for-bottom_gas" class="col-4 d-flex justify-content-center">MED GAS PRICE</div>
+          <div id="text-for-bottom_cap" class="col-4 d-flex justify-content-center">MARKET CAP</div>
+        </div>
+      </div>
+      <div style="height:200px;width:calc(100%);background-color:#fff" id="chart-1"><canvas id="myChart1"></canvas>
+      </div>
+    </div>
+    <footer class="text-center text-lg-start mt-5" id="footMobile">
+      <div class="bottomnavbar" id="modalDark">
+        <div class="navbar navbar-expand-lg" style="height:165px" id="footershadow">
+          <div class="container-fluid" style="justify-content:center;margin-bottom:20px"><button type="button" id="wallet-button-mobile"
+              class="btn btn-outline-light"
+              style="color:#fff;background-color:#d2d2f9;width:65%;border:none;height:4em;margin:20px;color:#fff;font-family:Inter;font-style:normal;font-weight:700;font-size:14px;line-height:17px">Wallet</button></div>
+          <div class="container-fluid justify-content-center"><a style="color:#fff;margin-left:2.5%;margin-right:9px"
+              href="https://twitter.com/etherphoenlx" target="_blank"><img alt=""
+                src="photo/TwitterMobileLight.png"></a><a
+              style="color:#fff;padding-right:5%;margin-left:5%;padding-left:5%;border-left:1px solid #787878;border-right:1px solid #787878"
+              href="#"><img alt="" src="photo/YoutubeLogoMobileLight.png"></a><a style="color:#fff"
+              href="https://medium.com/@etherphoenix" target="_blank"><img alt="" style="width:50px"
+                src="photo/Mediuym.svg"></a></div>
+        </div>
+        <div class="container-fluid leftFooter"
+          style="display:flex;flex-direction:column;padding-top:2%;padding-bottom:6%"><a class="footerA footerA1"
+            style="color:#787878;margin-bottom:6px;margin-top:9px" href="indexFAQ.html">FAQ</a>
+          <div class="linefooter footerA2"></div><a class="footerA"
+            style="color:#787878;margin-bottom:6px;margin-top:6px" href="indexJobs.html">Jobs</a>
+          <div class="linefooter"></div><a class="footerA footerA3"
+            style="color:#787878;text-align:center;margin-top:6px" type="button" href="index2.html">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <nav class="navbar fixed-bottom navbar-light bg-dark" id="NavBottomMobile" style="display:none"
+    data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+    <div class="container justify-content-center" style="height:67px"><button type="button"
+        class="btn btn-outline-light"
+        style="color:#fff;background-color:#d2d2f9;width:65%;border:none;height:4em;color:#fff;font-family:Inter;font-style:normal;font-weight:700;font-size:14px;line-height:17px">Staking
+        launpad</button></div>
+  </nav>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-scrollable" style="border:1px">
+      <div class="modal-content d-flex" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile purplecolor">1</div>
+            <div class="smallboxMobile">2</div>
+            <div class="smallboxMobile">3</div>
+            <div class="smallboxMobile">4</div>
+            <div class="smallboxMobile">5</div>
+            <div class="smallboxMobile">6</div>
+            <div class="smallboxMobile">7</div>
+            <div class="smallboxMobile">8</div>
+            <div class="smallboxMobile">9</div>
+            <div class="smallboxMobile">10</div>
+          </div>
+        </div>
+        <div class="modal-body" name="modalbodyheight" id="modalbodyheight" style="height:632px"><button id="crossmodal"
+            type="button" class="cross_modal" data-mdb-dismiss="modal" aria-label="Close"
+            style="border:none;background:0 0"><img alt="" src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1 dop-boxes">
+              <div class="text_for_modal1">
+                <p>Proof of Stake</p>
+              </div>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="box_for_modal2 dop-boxes"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="box_for_modal3 dop-boxes"></div>
+            <div class="text_for_modal3">
+              <p style="width:600px">The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="box_for_modal4 dop-boxes"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="box_for_modal5 dop-boxes"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p id="text_aling_modal">Proof of stake</p>
+          </div>
+          <div class="text_main_modal overflow-auto" id="1234">The Beacon Chain upgrade brings proof-of-stake consensus
+            to Ethereum.<br>For this, we need active participants - known as validators - to propose, verify, and vouch
+            for the validity of blocks. In exchange, honest validators receive financial rewards.<br>Importantly, as a
+            validator you'll need to post TestnetETH as collateral in other words, have some funds at stake. The only
+            way to become a validator is to make a one-way TestnetETH transaction to the deposit contract on the current
+            Ethereum chain.</div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto">I understand proof-of-stake and why validators are needed.</div>
+          <button class="Button_accept_modal overflow-auto" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal1"></button> <button class="button_modal_text overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal1" style="border:none;background:0 0">I
+            accept</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay1">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile" id="smallboxMobileStyle">1</div>
+            <div class="smallboxMobile purplecolor">2</div>
+            <div class="smallboxMobile">3</div>
+            <div class="smallboxMobile">4</div>
+            <div class="smallboxMobile">5</div>
+            <div class="smallboxMobile">6</div>
+            <div class="smallboxMobile">7</div>
+            <div class="smallboxMobile">8</div>
+            <div class="smallboxMobile">9</div>
+            <div class="smallboxMobile">10</div>
+          </div>
+        </div>
+        <div class="modal-body" id="modalbodyheight1" style="height:632px"><button id="crossmodal2" type="button"
+            class="cross_modal1" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img
+              alt="" src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1"></div>
+            <div class="text_for_modal1">
+              <p>Proof of Stake</p>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="check_circle_for_modal1"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal2"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="box_for_modal3"></div>
+            <div class="text_for_modal3">
+              <p>The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="box_for_modal4"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="box_for_modal5"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p>The deposit</p>
+          </div>
+          <div class="text_main_modal overflow-auto">To become a validator on the Beacon Chain, you need to deposit 32
+            TestnetETH per validator that you wish to run.<br>This is a non-reversible transaction.<br>Withdrawing your
+            deposit will not be possible until the Shanghai upgrade planned for after the Merge.</div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto">I understand that I need to deposit 32 TestnetETH to become a
+            validator, and that the transfer of TestnetETH to the Beacon Chain is one-way, and non-reversible.</div>
+          <button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal2"></button> <button class="button_modal_text2" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal2" style="border:none;background:0 0">I accept</button> <button
+            class="button_back_modal overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal"></button>
+          <button class="button_back_text overflow-visible" data-mdb-toggle="modal" data-mdb-target="#exampleModal"
+            style="border:none;background:0 0">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay2">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile" id="smallboxMobileStyle1">1</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle2">2</div>
+            <div class="smallboxMobile purplecolor">3</div>
+            <div class="smallboxMobile">4</div>
+            <div class="smallboxMobile">5</div>
+            <div class="smallboxMobile">6</div>
+            <div class="smallboxMobile">7</div>
+            <div class="smallboxMobile">8</div>
+            <div class="smallboxMobile">9</div>
+            <div class="smallboxMobile">10</div>
+          </div>
+        </div>
+        <div class="modal-body" id="modalbodyheight8" style="height:632px"><button id="crossmodal1" type="button"
+            class="cross_modal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img
+              alt="" src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1"></div>
+            <div class="text_for_modal1">
+              <p>Proof of Stake</p>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="check_circle_for_modal1"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal2"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="check_circle_for_modal2"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal3"></div>
+            <div class="text_for_modal3">
+              <p>The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="box_for_modal4"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="box_for_modal5"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p>Using the terminal</p>
+          </div>
+          <div class="text_main_modal overflow-auto">To become a validator, you will need to be able to run commands in
+            the terminal on your computer. Generating your new key pairs and installing the validator software are both
+            done in the terminal.</div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto">I am technically capable of setting up and running a validator.
+          </div><button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal3"></button> <button class="button_modal_text2" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal3" style="border:none;background:0 0">I accept</button> <button
+            class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal1"></button> <button class="button_back_text overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal1" style="border:none;background:0 0">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay4">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile" id="smallboxMobileStyle4">1</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle5">2</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle6">3</div>
+            <div class="smallboxMobile purplecolor">4</div>
+            <div class="smallboxMobile">5</div>
+            <div class="smallboxMobile">6</div>
+            <div class="smallboxMobile">7</div>
+            <div class="smallboxMobile">8</div>
+            <div class="smallboxMobile">9</div>
+            <div class="smallboxMobile">10</div>
+          </div>
+        </div>
+        <div class="modal-body" id="modalbodyheight5" style="height:632px"><button id="crossmodal5" type="button"
+            class="cross_modal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img
+              alt="" src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1"></div>
+            <div class="text_for_modal1">
+              <p>Proof of Stake</p>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="check_circle_for_modal1"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal2"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="check_circle_for_modal2"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal3"></div>
+            <div class="text_for_modal3">
+              <p>The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="check_circle_for_modal3"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal4"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="box_for_modal5"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p>Validator uptime</p>
+          </div>
+          <div class="text_main_modal overflow-auto">You'll only get your full rewards if your validator is online and
+            up to date. This is your responsibility. If your validator goes offline you'll be penalized. The penalties
+            for being offline are roughly equal to the rewards for actively participating.</div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto">I understand that it is important to keep my validator online and
+            updated.</div><button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal4"></button> <button class="button_modal_text2" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal4" style="border:none;background:0 0">I accept</button> <button
+            class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal2"></button> <button class="button_back_text overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal2" style="border:none;background:0 0">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay9">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile" id="smallboxMobileStyle10">1</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle11">2</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle12">3</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle13">4</div>
+            <div class="smallboxMobile purplecolor">5</div>
+            <div class="smallboxMobile">6</div>
+            <div class="smallboxMobile">7</div>
+            <div class="smallboxMobile">8</div>
+            <div class="smallboxMobile">9</div>
+            <div class="smallboxMobile">10</div>
+          </div>
+        </div>
+        <div class="modal-body" id="modalbodyheight10" style="height:632px"><button id="crossmodal6" type="button"
+            class="cross_modal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img
+              alt="" src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1"></div>
+            <div class="text_for_modal1">
+              <p>Proof of Stake</p>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="check_circle_for_modal1"><img src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal2"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="check_circle_for_modal2"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal3"></div>
+            <div class="text_for_modal3">
+              <p>The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="check_circle_for_modal3"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal4"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="check_circle_for_modal4"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal5"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p>Bad validator behaviour</p>
+          </div>
+          <div class="text_main_modal overflow-auto">If you try to cheat the system, or act contrary to the
+            specification, you will be liable to incur a penalty, known as slashing. Running your validator keys
+            simultaneously on two or more machines will result in slashing.</div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto">I understand that if I act contrary to the specification, I am
+            liable to be slashed.</div><button class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal5"></button> <button class="button_modal_text2" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal5" style="border:none;background:0 0">I accept</button> <button
+            class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal3"></button> <button class="button_back_text overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal3" style="border:none;background:0 0">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay12">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile" id="smallboxMobileStyle15">1</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle16">2</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle17">3</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle18">4</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle19">5</div>
+            <div class="smallboxMobile purplecolor">6</div>
+            <div class="smallboxMobile">7</div>
+            <div class="smallboxMobile">8</div>
+            <div class="smallboxMobile">9</div>
+            <div class="smallboxMobile">10</div>
+          </div>
+        </div>
+        <div class="modal-body" id="modalbodyheight13" style="height:632px"><button id="crossmodal7" type="button"
+            class="cross_modal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img
+              alt="" src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1"></div>
+            <div class="text_for_modal1">
+              <p>Proof of Stake</p>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="check_circle_for_modal1"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal2"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="check_circle_for_modal2"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal3"></div>
+            <div class="text_for_modal3">
+              <p>The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="check_circle_for_modal3"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal4"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="check_circle_for_modal4"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal5"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="check_circle_for_modal5"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p>Key management</p>
+          </div>
+          <div class="text_main_modal overflow-auto">To become a validator you'll need to know about managing keys and
+            protecting a mnemonic. If you are not yet familiar with keys and mnemomics, please do not proceed. Note that
+            during this process you will not derive the keys needed to withdraw later, so store your mnemonic safely in
+            order to be able to withdraw later.<br>We'll help you create a signing key for every validator you want to
+            run. Because there are no withdrawals until the Shanghai upgrade planned to follow the Merge, you will not
+            create your withdrawal keys now. When it is possible to withdraw your funds, you can derive your withdrawal
+            keys from your mnemonic.<br>Your mnemonic is the backup for your signing keys and will be the ONLY way to
+            withdraw your TestnetETH when the time comes and no one can help you recover your mnemonic if you lose it.
+          </div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto">I understand that keys are my responsibility and that my mnemonic
+            (seed) will be the <strong>ONLY WAY </strong>to withdraw my funds.</div><button
+            class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal6"></button> <button class="button_modal_text2" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal6" style="border:none;background:0 0">I accept</button> <button
+            class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal4"></button> <button class="button_back_text overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal4" style="border:none;background:0 0">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay14">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile" id="smallboxMobileStyle20">1</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle21">2</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle22">3</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle23">4</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle24">5</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle25">6</div>
+            <div class="smallboxMobile purplecolor">7</div>
+            <div class="smallboxMobile">8</div>
+            <div class="smallboxMobile">9</div>
+            <div class="smallboxMobile">10</div>
+          </div>
+        </div>
+        <div class="modal-body" id="modalbodyheight15" style="height:632px"><button id="crossmodal9" type="button"
+            class="cross_modal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img
+              alt="" src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1"></div>
+            <div class="text_for_modal1">
+              <p>Proof of Stake</p>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="check_circle_for_modal1"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal2"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="check_circle_for_modal2"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal3"></div>
+            <div class="text_for_modal3">
+              <p>The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="check_circle_for_modal3"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal4"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="check_circle_for_modal4"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal5"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="check_circle_for_modal5"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="check_circle_for_modal6"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p>Validating is a long-term<br>commitment</p>
+          </div>
+          <div class="text_main_modal overflow-auto" style="margin-top:20px">Transfers between validators and
+            withdrawals aren't possible yet. Withdrawal functionality is currently a top priority, and is planned to be
+            rolled out in the next network upgrade, known as the Shanghai upgrade.<br><br>With transfers disabled for
+            now, you won't be able to voluntarily exit and then restart later. This means you need to be in it for the
+            long haul.</div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto">I understand that <strong>CANNOT TRANSFER</strong> my stake for a
+            while, and <strong>CANNOT WITHDRAW</strong> until the merge. I understand that if I exit, I will not be able
+            to rejoin until much later. This is a long term commitment.</div><button
+            class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal7"></button> <button class="button_modal_text2" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal7" style="border:none;background:0 0">I accept</button> <button
+            class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal5"></button> <button class="button_back_text overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal5" style="border:none;background:0 0">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay16">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile" id="smallboxMobileStyle27">1</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle28">2</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle29">3</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle30">4</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle31">5</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle32">6</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle33">7</div>
+            <div class="smallboxMobile purplecolor">8</div>
+            <div class="smallboxMobile">9</div>
+            <div class="smallboxMobile">10</div>
+          </div>
+        </div>
+        <div class="modal-body" id="modalbodyheight17" style="height:632px"><button id="crossmodal12" type="button"
+            class="cross_modal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img
+              alt="" src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1"></div>
+            <div class="text_for_modal1">
+              <p>Proof of Stake</p>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="check_circle_for_modal1"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal2"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="check_circle_for_modal2"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal3"></div>
+            <div class="text_for_modal3">
+              <p>The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="check_circle_for_modal3"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal4"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="check_circle_for_modal4"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal5"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="check_circle_for_modal5"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="check_circle_for_modal6"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="check_circle_for_modal7"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p>Early adopter risks</p>
+          </div>
+          <div class="text_main_modal overflow-auto">You're joining a network in its early stages. As with any new piece
+            of software, there is the potential for software bugs. While unlikely, potential bugs may result in
+            slashing.</div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto">I am an early adopter, and I accept that software and design bugs
+            may result in me being slashed.</div><button class="Button_accept_modal2 overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal8"></button> <button class="button_modal_text2"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal8" style="border:none;background:0 0">I
+            accept</button> <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal6"></button> <button class="button_back_text overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal6" style="border:none;background:0 0">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay28">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile" id="smallboxMobileStyle37">1</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle38">2</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle39">3</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle41">4</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle42">5</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle43">6</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle44">7</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle45">8</div>
+            <div class="smallboxMobile purplecolor">9</div>
+            <div class="smallboxMobile">10</div>
+          </div>
+        </div>
+        <div class="modal-body" id="modalbodyheight28" style="height:632px"><button id="crossmodal16" type="button"
+            class="cross_modal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img
+              alt="" src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1"></div>
+            <div class="text_for_modal1">
+              <p>Proof of Stake</p>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="check_circle_for_modal1"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal2"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="check_circle_for_modal2"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal3"></div>
+            <div class="text_for_modal3">
+              <p>The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="check_circle_for_modal3"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal4"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="check_circle_for_modal4"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal5"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="check_circle_for_modal5"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="check_circle_for_modal6"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="check_circle_for_modal7"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="check_circle_for_modal8"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p>Staking checklist</p>
+          </div>
+          <div class="text_main_modal overflow-auto">Please review the staking checklist prior to proceeding. Use this
+            as a guide to check off tasks as you complete validator setup.</div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto">I have reviewed the checklist.</div><button
+            class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal9"></button> <button class="button_modal_text2" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal9" style="border:none;background:0 0">I accept</button> <button
+            class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal7"></button> <button class="button_back_text overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal7" style="border:none;background:0 0">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" style="border-radius:0;border:1px solid">
+        <div class="modal-header" id="headDisplay29">
+          <div class="container d-flex justify-content-center">
+            <div class="smallboxMobile" id="smallboxMobileStyle50">1</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle51">2</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle52">3</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle53">4</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle54">5</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle55">6</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle56">7</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle57">8</div>
+            <div class="smallboxMobile" id="smallboxMobileStyle58">9</div>
+            <div class="smallboxMobile purplecolor">10</div>
+          </div>
+        </div>
+        <div class="modal-body" id="modalbodyheight30" style="height:632px"><button id="crossmodal22" type="button"
+            class="cross_modal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img
+              src="photo/XSquare.png"></button>
+          <div class="dop_box">
+            <div class="box_for_modal1"></div>
+            <div class="text_for_modal1">
+              <p>Proof of Stake</p>
+            </div>
+            <div class="small_box_for_modal1"></div>
+            <div class="number_for_modal1">
+              <p>1</p>
+            </div>
+            <div class="check_circle_for_modal1"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal2"></div>
+            <div class="text_for_modal2">
+              <p>Deposit</p>
+            </div>
+            <div class="small_box_for_modal2"></div>
+            <div class="number_for_modal2">
+              <p>2</p>
+            </div>
+            <div class="check_circle_for_modal2"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal3"></div>
+            <div class="text_for_modal3">
+              <p>The terminal</p>
+            </div>
+            <div class="small_box_for_modal3"></div>
+            <div class="number_for_modal3">
+              <p>3</p>
+            </div>
+            <div class="check_circle_for_modal3"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal4"></div>
+            <div class="text_for_modal4">
+              <p>Uptime</p>
+            </div>
+            <div class="small_box_for_modal4"></div>
+            <div class="number_for_modal4">
+              <p>4</p>
+            </div>
+            <div class="check_circle_for_modal4"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal5"></div>
+            <div class="text_for_modal5">
+              <p>Bad behaviour</p>
+            </div>
+            <div class="small_box_for_modal5"></div>
+            <div class="number_for_modal5">
+              <p>5</p>
+            </div>
+            <div class="check_circle_for_modal5"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal6"></div>
+            <div class="text_for_modal6">
+              <p>Key management</p>
+            </div>
+            <div class="small_box_for_modal6"></div>
+            <div class="number_for_modal6">
+              <p>6</p>
+            </div>
+            <div class="check_circle_for_modal6"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal7"></div>
+            <div class="text_for_modal7">
+              <p>Commitment</p>
+            </div>
+            <div class="small_box_for_modal7"></div>
+            <div class="number_for_modal7">
+              <p>7</p>
+            </div>
+            <div class="check_circle_for_modal7"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal8"></div>
+            <div class="text_for_modal8">
+              <p>Early adopter risks</p>
+            </div>
+            <div class="small_box_for_modal8"></div>
+            <div class="number_for_modal8">
+              <p>8</p>
+            </div>
+            <div class="check_circle_for_modal8"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal9"></div>
+            <div class="text_for_modal9">
+              <p>Checklist</p>
+            </div>
+            <div class="small_box_for_modal9"></div>
+            <div class="number_for_modal9">
+              <p>9</p>
+            </div>
+            <div class="check_circle_for_modal9"><img alt="" src="photo/CheckCircle.png"></div>
+            <div class="box_for_modal10"></div>
+            <div class="text_for_modal10">
+              <p>Confirmation</p>
+            </div>
+            <div class="small_box_for_modal10"></div>
+            <div class="number_for_modal10">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="text_aling_modal overflow-visible">
+            <p>Confirmation</p>
+          </div>
+          <div class="text_main_modal overflow-auto">I have read and agree to the Launchpad terms of service.</div>
+          <div class="line_for_modal overflow-auto"></div>
+          <div class="bottom_text_modal overflow-auto"><input class="form-check-input position-static" type="checkbox"
+              id="blankCheckbox" value="option1" aria-label="..."> I understand and agree to the <a
+              href="index2.html">terms-of-service</a> and everything stated in the previous sections.I agree to
+            auto-invest my staking income to increase my deposit</div><button
+            class="Button_accept_modal2 overflow-visible" data-mdb-toggle="modal" data-mdb-target="#Lastbutton"
+            id="last-button"></button> <button class="button_modal_text2" id="last-text-of-button"
+            data-mdb-toggle="modal" data-mdb-target="#Lastbutton" style="border:none;background:0 0">Continue</button>
+          <button class="button_back_modal overflow-visible" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal8"></button> <button class="button_back_text overflow-visible"
+            data-mdb-toggle="modal" data-mdb-target="#exampleModal8" style="border:none;background:0 0">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Lastbutton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content" id="modal-test-disable" style="border-radius:0;border:1px solid">
+        <div class="modal-body" id="modal-kalkulator" style="height:632px"><button type="button" class="cross_modal24"
+            id="crossmodal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img alt=""
+              src="photo/XSquare.png"></button>
+          <div class="dop_box"></div>
+          <div class="staking-text-for-button">Staking</div>
+          <div class="mobilecalcdeposit">
+            <div class="efirimgformobile">
+              <p class="eth-text-mobile">ETH</p>
+            </div>
+            <div class="eth-calc-box-mobile">
+              <div class="container row">
+                <p id="eth-text-for-calc1" class="col-6">Your holdings</p>
+                <p class="col-6" style="display:flex;color:#8C8CF5;flex-direction:row-reverse">Value</p>
+              </div>
+              <div class="container row"><input id="custom-value2" type="number" class="col-6" value="0"
+                  style="padding-bottom: 14px;" />
+                <p id="range-value2" class="col-6" style="display:flex;flex-direction:row-reverse;color:#787878;">123
+                </p>
+              </div>
+            </div>
+            <div><input type="range" id="customRange3" class="form-range" max="32" step="0.05" min="0" value="0"
+                style="margin-top:160px" /></div>
+            <div class="eth-calc-box-mobile2">
+              <div class="container row" style="height:20px">
+                <p id="eth-text-for-calc5" class="col-6">Daily Profit</p>
+                <p id="eth-text-for-calc6" class="col-6" style="display:flex;flex-direction:row-reverse">Monthly Profit
+                </p>
+              </div>
+              <div class="container row" style="height:20px">
+                <p id="eth-text-for-calc7" class="col-6"></p>
+                <p id="eth-text-for-calc8" class="col-6" style="display:flex;flex-direction:row-reverse"></p>
+              </div>
+            </div>
+            <div class="eth-calc-box-mobile3" style="margin-top:10px">
+              <div class="container row" style="height:20px">
+                <p id="eth-text-for-calc9" class="col-6">Yearly Profit</p>
+                <p id="eth-text-for-calc10" class="col-6" style="display:flex;flex-direction:row-reverse">Yearly yield
+                </p>
+              </div>
+              <div class="container row" style="height:20px">
+                <p id="eth-text-for-calc11" class="col-6"></p>
+                <p id="eth-text-for-calc12" class="col-6" style="display:flex;flex-direction:row-reverse"></p>
+              </div>
+            </div>
+            <div class='grafic4' id="grafic4">
+              <canvas id="myChart4"></canvas>
+            </div>
+          </div>
+          <div class="ether_box your-holdings" id="dark-box5"
+            style="width:58%;margin-left:21%;margin-top:8%;border:1px solid;">
+            <div class="col-2 form-of-eth-1" style="margin-left:40%"><img alt="" class="mx-auto"
+                src="photo/Etherium.png"></div>
+            <div class="col-2 form-of-eth-1" style="margin-left:43%">
+              <p
+                style="font-family:Inter;font-style:normal;font-weight:700;font-size:20px;line-height:24px;color:#787878">
+                ETH</p>
+            </div>
+            <div class="container-fluid row ether_box_in" style="margin-left:1em;width:95%;margin-top:1em">
+              <div class="col-5" id="your-holdings1">
+                <p class="your-holdings">Your holdings<br><br><input value="0" id="custom-value1" type="number"
+                    style="font-family:Inter;font-style:normal;font-weight:600;font-size:22px;line-height:27px;color:#787878;background:0 0;border:none;outline:0" />
+                </p>
+              </div>
+              <div class="col-2">
+                <p
+                  style="font-family:Inter;font-weight:500;font-size:14px;line-height:17px;margin-top:6%;margin-right:3%;direction:rtl;color:#8c8cf5">
+                  Value<br><br><span
+                    style="font-family:Inter;font-style:normal;font-weight:600;font-size:22px;line-height:27px;color:#787878"
+                    id="range-value1">0</span></p>
+              </div>
+              <div class="col-2 form-of-eth" style="border-left:1px solid #d2d2f9"><img alt="" class="mx-auto"
+                  src="photo/Etherium.png"></div>
+              <div class="col-2 form-of-eth" style="margin-top:1.5em">
+                <p
+                  style="font-family:Inter;font-style:normal;font-weight:700;font-size:20px;line-height:24px;color:#787878">
+                  ETH</p>
+              </div><input type="range" class="form-range" max="32" step="0.05" min="0" value="0" id="customRange2" />
+            </div>
+            <div class="container row" style="margin-top:4em">
+              <p class="col-3 calc-text justify-content-center daily-profit-text"
+                style="display:flex;flex-direction:column;align-items:center">Daily Profit</p>
+              <p class="col-3 calc-text daily-profit-text"
+                style="display:flex;flex-direction:row;justify-content:center">Monthly Profit</p>
+              <p class="col-3 calc-text daily-profit-text"
+                style="display:flex;flex-direction:row;justify-content:center">Yearly Profit</p>
+              <p class="col-3 calc-text daily-profit-text"
+                style="display:flex;flex-direction:column;align-items:center">Yearly yield</p>
+            </div>
+            <div class="container-fluid row">
+              <p class="col-3 profit-text"
+                style="font-family:Inter;font-style:normal;font-weight:600;font-size:16px;flex-direction:column;display:flex;align-items:center;line-height:19px;color:#787878"
+                id="daily-profit1">0</p>
+              <p class="col-3 profit-text"
+                style="font-family:Inter;font-style:normal;font-weight:600;font-size:16px;flex-direction:column;display:flex;align-items:center;line-height:19px;color:#787878"
+                id="month-profit1">0</p>
+              <p class="col-3 profit-text"
+                style="font-family:Inter;font-style:normal;font-weight:600;font-size:16px;display:flex;flex-direction:column;align-items:center;line-height:19px;color:#787878"
+                id="year-amount1">0</p>
+              <p class="col-3 profit-text"
+                style="font-family:Inter;font-style:normal;font-weight:600;font-size:16px;flex-direction:column;display:flex;align-items:center;line-height:19px;color:#787878"
+                id="amount-procent1">+0%</p>
+            </div>
+
+
+            <div class='grafic3' id="grafic3">
+              <canvas id="myChart3"></canvas>
+            </div>
+          </div>
+
+
+
+        </div>
+        <button class="staking-premium-button staking-premium-text" id="premium-button" data-mdb-toggle="modal"
+          data-mdb-target="#chatmodal" disabled="disabled">Premium</button> <img class="premium-img" src="photo/!.png"
+          data-toggle="tooltip" data-html="true" data-mdb-target="#Lastbutton" id="premium-img"
+          title="Premium subscription is unlocked after staking 5 ETH"> <button
+          class="staking-unstake-button staking-unstake-text">Unstake</button> <button
+          class="staking-stake-button staking-stake-text" data-mdb-toggle="modal" data-mdb-target="#Lastbutton"
+          id="stake-button">Stake</button> <button class="staking-back-button staking-back-text" data-mdb-toggle="modal"
+          data-mdb-target="#exampleModal9">Back</button> <button class="wallet_modal"
+          style="font-family:Inter;color:#fff;font-style:normal;font-weight:900;font-size:14px;line-height:17px">Wallet</button>
+        <div id="wallet-for-m"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="chatmodal" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="border:1px">
+      <div class="modal-content">
+        <div class="modal-body" id="modalbodyheight56" style="height:632px"><button type="button" class="cross_modal35"
+            id="crossmodal" data-mdb-dismiss="modal" aria-label="Close" style="border:none;background:0 0"><img alt=""
+              src="photo/XSquare.png"></button>
+          <div class="chat-text-for-button">Fill in the contact information</div>
+          <div class="text-button-for-chatmodal">Wallet</div>
+          <div class="img-wallet-for-chatmodal"></div>
+          <div class="button-for-chatmodal">
+            <p class="text-button-for-chatmodal2">123</p>
+          </div>
+          <div class="telegram-text-chatmodal" id="telegram-name">Telegram</div>
+          <div class="telegram-img-chatmodal"></div><input style="text-align:center" class="input-telegram-chatmodal"
+            value="@" />
+          <form>
+            <div class="mail-text-chatmodal" id="custom-mail">Mail</div><input style="text-align:center"
+              class="input-mail-chatmodal" type="email" />
+            <div class="mail-img-chatmodal"></div><button class="button-back-chatmodal" data-mdb-toggle="modal"
+              data-mdb-target="#Lastbutton">Back</button> <button class="subscribe-button-chatmodal">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center text-lg-start mt-5 pt-5" id="foot">
+    <div class="bottomnavbar">
+      <div class="navbar navbar-expand-lg navbar-dark" style="height:100px;background-color:#303030;margin-top:30px">
+        <div class="container-fluid leftFooter" style="justify-content:left;padding-top:2%;padding-bottom:2%"><a
+            type="button" id="deposit-button" class="footerA" data-mdb-toggle="modal" data-mdb-target="#exampleModal"
+            style="color:#fff;margin-left:5%;padding-right:5%;border-right:1px solid" data-bs-toggle="modal"
+            role="button">Deposit </a><a type="button" href="" id="deposit-button1" class="footerA"
+            data-mdb-toggle="modal" data-mdb-target="#Lastbutton"
+            style="color:#fff;margin-left:5%;padding-right:5%;border-right:1px solid;display:none"
+            data-bs-toggle="modal" role="button">Deposit </a><a class="footerA footerA1"
+            style="color:#fff;text-align:left;margin-left:5%;padding-right:5%;border-right:1px solid" type="button"
+            href="index2.html">Terms of Service</a> <a class="footerA"
+            style="color:#fff;margin-left:5%;padding-right:5%;border-right:1px solid" href="indexFAQ.html">FAQ</a> <a
+            class="footerA" style="color:#fff;margin-left:5%" href="indexJobs.html">Jobs</a></div>
+        <div class="container-fluid" style="justify-content:center;background-color:#303030"><a href="#exampleModal"
+            id="footer-button" data-mdb-toggle="modal" data-mdb-target="#exampleModal" type="button"
+            class="btn btn-outline-light"
+            style="color:#fff;background-color:#d2d2f9;width:40%;border:none;height:5em;color:#fff;font-family:Inter;font-style:normal;font-weight:700;font-size:14px;line-height:17px;padding-top:5%;">Staking
+            launpad</a> <button id="footer-button1" data-mdb-toggle="modal" data-mdb-target="#Lastbutton" type="button"
+            class="btn btn-outline-light"
+            style="color:#fff;background-color:#d2d2f9;width:40%;border:none;height:5em;display:none;color:#fff;font-family:Inter;font-style:normal;font-weight:700;font-size:14px;line-height:17px;display:none">Staking
+            launpad</button></div>
+        <div class="container-fluid justify-content-center" style="background-color:#303030"><a
+            style="color:#fff;margin-left:5%" target="_blank" href="https://twitter.com/etherphoenlx"><img alt=""
+              src="photo/Twitter.png"></a><a
+            style="color:#fff;margin-left:5%;padding-left:5%;border-left:1px solid;border-right:1px solid;padding-right:5%"
+            href="#"><img alt="" src="photo/YoutubeLogo.png"></a><a style="color:#fff;margin-right:5%;padding-left:1%"
+            href="https://medium.com/@etherphoenix" target="_blank"><img alt="" style="width:65px;height:65px"
+              src="photo/MediuymDark.svg"></a></div>
+      </div>
+    </div>
+  </footer>
+  <footer class="text-center text-lg-start mt-5" id="footMobile1" style="display:none">
+    <div class="bottomnavbar">
+      <div class="navbar navbar-expand-lg foot-mobile" style="height:89px ;margin-top:350px;" id="footershadow1">
+        <div class="container-fluid justify-content-center" style="padding-bottom:4%"><a style="color:#fff"
+            href="https://twitter.com/etherphoenlx" target="_blank"><img alt=""
+              src="photo/TwitterMobileLight.png"></a><a
+            style="color:#fff;margin-left:5%;padding-left:5%;padding-right:5%;border-left:1px solid #787878;border-right:1px solid #787878"
+            href="#"><img alt="" src="photo/YoutubeLogoMobileLight.png"></a><a style="color:#fff;padding-left:3%"
+            href="https://medium.com/@etherphoenix" target="_blank"><img style="width:50px" alt=""
+              src="photo/Mediuym.svg"></a></div>
+      </div>
+      <div class="container-fluid leftFooter" style="display:flex;flex-direction:column;padding-bottom:27%"><a
+          class="footerA footerA1" style="color:#787878;margin-bottom:6px;margin-top:9px" href="indexFAQ.html">FAQ</a>
+        <div class="linefooter footerA2"></div><a class="footerA" style="color:#787878;margin-bottom:6px;margin-top:6px"
+          href="indexJobs.html">Jobs</a>
+        <div class="linefooter"></div><a class="footerA footerA3" style="color:#787878;text-align:center;margin-top:6px"
+          type="button" href="index2.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const BB = document.getElementById('body')
+    const themeBtn = document.getElementById('theme-button');
+    const themeBtn2 = document.getElementById('theme-button-1')
+    let theme;
+    let themebtn;
+    themeBtn.addEventListener('click', function () {
+
+      theme = localStorage.setItem('theme', 'dark-theme');
+      themebtn = localStorage.setItem('themebtn', 'theme-button sun-button');
+      
+
+
+
+    })
+    if (localStorage.theme != undefined) {
+      BB.classList.remove('light-theme')
+      BB.classList.add('dark-theme')
+      
+      themeBtn.classList.add('custom-control-label sun-button')
+      themeBtn.classList.remove('theme-button custom-control-label')
+      
+    }
+    else {
+      BB.classList = ''
+    }
+    if (BB.classList == 'dark-theme') {
+      document.getElementById('wallet-button').style.backgroundColor = "#FFAB7C"
+    }
+
+    // themeBtn.classList = localStorage.themebtn
+
+    function createCookie1(name, value, days) {
+      var expires;
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+      }
+      else {
+        expires = "";
+      }
+      document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function deleteCookie(name) {
+      setCookie(name, "", {
+        value: "",
+        days: "",
+      })
+
+    }
+
+    function getCookie(c_name) {
+      if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=");
+        if (c_start != -1) {
+          c_start = c_start + c_name.length + 1;
+          c_end = document.cookie.indexOf(";", c_start);
+          if (c_end == -1) {
+            c_end = document.cookie.length;
+          }
+          return unescape(document.cookie.substring(c_start, c_end));
+        }
+      }
+      return "";
+    }
+// let themeDRK = getCookie('themeOfSite')
+// themeBtn.classList = themeDRK
+
+  </script>
+  <script> let USD = []
+    // const dailyProfit = document.getElementById('daily-profit');
+
+    fetch('https://min-api.cryptocompare.com/data/v2/histoday?fsym=ETH&tsym=USD&limit=6&aggregate=3&e=Kraken&extraParams=your_app_name')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        //     import {customValue} from "./style.js"
+        // console.log(customValue)
+        for (let i = 0; i < 7; i++) {
+
+          USD[i] = data.Data.Data[i].close;
+          //console.log(data.Data.Data[i])
+        }
+        // console.log(data.Data.Data)
+        const firstInput = document.getElementById('custom-value')
+        const secondInput = document.getElementById('customRange1');
+        const dailyProfit = document.getElementById('daily-profit');
+        const thirdInput = document.getElementById('custom-value1');
+        const fourthInput = document.getElementById('customRange2');
+        const fifrhInput = document.getElementById('custom-value2');
+        const customRange4 = document.getElementById('customRange3');
+        const yearhuy = document.getElementById('amount-procent')
+        let customVV = [];
+
+        console.log(USD)
+        const labels = [
+          'aug 19',
+          '',
+          '',
+          'Aug 26',
+          '',
+          '',
+          'Sep 2',
+        ];
+        console.log(USD[0]);
+        const dataf = {
+          labels: labels,
+          datasets: [{
+            label: 'ETHEREUM TRANSACTION HISTORY IN 14 DAYS',
+            backgroundColor: '#2FDF2C',
+            borderColor: '#2FDF2C',
+            data: [USD[0], USD[1], USD[2], USD[3], USD[4], USD[5], USD[6]],
+            tension: 0.5,
+          }]
+        };
+
+        const config = {
+          type: 'line',
+          data: dataf,
+          options: {}
+        };
+        const labels2 = [
+          '0day',
+          ' ',
+          ' ',
+          ' ',
+          ' ',
+          '30days',
+          ' ',
+          ' ',
+          ' ',
+          ' ',
+          ' ',
+          '60days',
+          ' ',
+          ' ',
+          ' ',
+          ' ',
+          '183days'
+
+
+        ]
+        const labels3 = [
+          '0day',
+          ' ',
+          ' ',
+
+          '30days',
+          ' ',
+          ' ',
+
+
+          '60days',
+          ' ',
+          ' ',
+
+          '183days'
+
+
+        ]
+        const labels4 = [
+          '0day',
+          ' ',
+          ' ',
+
+          '30days',
+          ' ',
+          ' ',
+
+
+          '60days',
+          ' ',
+          ' ',
+
+          '183days'
+
+
+        ]
+
+
+        const dataf2 = {
+
+
+          labels: labels2,
+          datasets: [
+            {
+              label: 'Daily Profit',
+              backgroundColor: ["#8C8CF5", '#40FF3D'],
+              borderColor: '#8C8CF5',
+              data: [0],
+              tension: 0.5,
+              radius: 0,
+
+            },
+            {
+              label: 'DP With Auto Invest',
+              backgroundColor: ["#8C8CF5", '#40FF3D'],
+              borderColor: '#40FF3D',
+              data: [0],
+              tension: 0.5,
+              radius: 0,
+            }
+          ]
+        };
+        const dataf3 = {
+
+
+          labels: labels3,
+          datasets: [
+            {
+              label: 'Daily Profit',
+              backgroundColor: ["#8C8CF5", '#40FF3D'],
+              borderColor: '#8C8CF5',
+              data: [0],
+              tension: 0.5,
+              radius: 0,
+
+            },
+            {
+              label: 'DP With Auto Invest',
+              backgroundColor: ["#8C8CF5", '#40FF3D'],
+              borderColor: '#40FF3D',
+              data: [0],
+              tension: 0.5,
+              radius: 0,
+            }
+          ]
+        };
+        const dataf4 = {
+
+
+          labels: labels4,
+          datasets: [
+            {
+              label: 'Daily Profit',
+              backgroundColor: ["#8C8CF5", '#40FF3D'],
+              borderColor: '#8C8CF5',
+              data: [0],
+              tension: 0.5,
+              radius: 0,
+
+            },
+            {
+              label: 'DP With Auto Invest',
+              backgroundColor: ["#8C8CF5", '#40FF3D'],
+              borderColor: '#40FF3D',
+              data: [0],
+              tension: 0.5,
+              radius: 0,
+            }
+          ]
+        };
+        //       const actions = [
+        //         {
+        //   name: 'Add Data',
+        //   handler(myChart2) {
+        //     const data = myChart2.data;
+        //     if (data.datasets.length > 0) {
+        //       data.labels = Utils.months({count: data.labels.length + 1});
+
+        //       for (let index = 0; index < data.datasets.length; ++index) {
+        //         data.datasets[index].data.push(Utils.rand(-100, 100));
+        //       }
+
+
+
+
+        //       myChart1.update();
+        //     }
+        //   }
+        // },
+        // ]
+        // document.getElementById('custom-value').oninput = function(){
+        //     console.log(document.getElementById('custom-value').value)
+        //     dataf2.datasets[0].data.push(Number(document.getElementById('custom-value').value))
+        //     // dataf2.lables.push(1);
+        //     myChart2.update()
+        // }
+        let info = [];
+        const config2 = {
+          type: 'line',
+          data: dataf2,
+
+          options: {
+            animation: {
+              duration: 0
+            }
+          }
+        }
+        const config3 = {
+          type: 'line',
+          data: dataf3,
+
+          options: {
+            animation: {
+              duration: 0
+            }
+          }
+        }
+        const config4 = {
+          type: 'line',
+          data: dataf4,
+
+          options: {
+            animation: {
+              duration: 0
+            }
+          }
+        }
+        const myChart = new Chart(
+          document.getElementById('myChart'),
+          config
+        );
+        const myChart1 = new Chart(
+          document.getElementById('myChart1'),
+          config
+        );
+        const myChart2 = new Chart(
+
+          document.getElementById('myChart2'),
+          config2
+        )
+        const myChart3 = new Chart(
+          document.getElementById('myChart3'),
+          config3
+        )
+        const myChart4 = new Chart(
+          document.getElementById('myChart4'),
+          config4
+        )
+        firstInput.addEventListener('input', pushValue)
+        secondInput.addEventListener('input', pushValue)
+        thirdInput.addEventListener('input', phonePushValue)
+        fourthInput.addEventListener('input', phonePushValue)
+        fifrhInput.addEventListener('input', secondPushPhone)
+        customRange4.addEventListener('input', secondPushPhone)
+
+
+        async function pushValue() {
+          let num;
+          let result = firstInput.value
+          if (firstInput.value > 0 && secondInput.value < 5.1) {
+            num = (result * 0.00013).toFixed(4) + "ETH";
+
+
+          }
+          else if (firstInput.value == 0) {
+            amountProcent.innerHTML = "+0%"
+            yearAmount.innerHTML = '0'
+            monthProfit.innerHTML = '0'
+            dailyProfit.innerHTML = '0'
+          }
+          else if (firstInput.value >= 5.1 && secondInput.value < 10.1) {
+
+            num = (result * 0.00023).toFixed(4) + "ETH";
+
+          }
+          else if (firstInput.value >= 10.1 && secondInput.value < 15.1) {
+
+            num = (result * 0.00035).toFixed(4) + "ETH";
+
+          }
+          else if (firstInput.value >= 15.1 && secondInput.value < 20.1) {
+
+            num = (result * 0.00050).toFixed(4) + "ETH";
+
+          }
+          else if (firstInput.value >= 20.1 && secondInput.value < 30.1) {
+
+            num = (result * 0.00059).toFixed(4) + "ETH";
+
+          }
+          else if (firstInput.value >= 30.1 && secondInput.value <= 31.99) {
+
+            num = (result * 0.00065).toFixed(4) + "ETH";
+
+          }
+
+          else {
+            num = (result * 0.00065).toFixed(4) + "ETH";
+
+
+
+          }
+          // console.log(yearhuy.innerHTML)    
+
+          let num2 = num.split("ETH")
+          let num3 = firstInput.value
+          let dailyNumBlya = Number(num2[0])
+          let res = Number(num3) + Number(num2[0])
+          let res1 = res + Number(num2[0])
+          let mnojnik = 14.0769230769
+
+
+          let res2 = res1 + dailyNumBlya * mnojnik
+          let res3 = res2 + dailyNumBlya * mnojnik
+          let res4 = res3 + dailyNumBlya * mnojnik
+          let res5 = res4 + dailyNumBlya * mnojnik
+          let res6 = res5 + dailyNumBlya * mnojnik
+          let res7 = res6 + dailyNumBlya * mnojnik
+          let res8 = res7 + dailyNumBlya * mnojnik
+          let res9 = res8 + dailyNumBlya * mnojnik
+          let res10 = res9 + dailyNumBlya * mnojnik
+          let res11 = res10 + dailyNumBlya * mnojnik
+          let res12 = res11 + dailyNumBlya * mnojnik
+          let res13 = res12 + dailyNumBlya * mnojnik
+          let res14 = res13 + dailyNumBlya * mnojnik
+          let res15 = res14 + dailyNumBlya * mnojnik
+          let res16 = res15 + dailyNumBlya * mnojnik
+          let res17 = res16 + dailyNumBlya * mnojnik
+          let res18 = res17 + dailyNumBlya * mnojnik
+
+
+          console.log(res)
+          // dataf2.datasets[1].data.push(num2[0])
+          if (num3 > 0 && num3 <= 32) {
+            console.log(res17)
+            dataf2.datasets[0].data = [num3]
+            dataf2.datasets[0].data.push(res)
+            dataf2.datasets[0].data.push(res1)
+            dataf2.datasets[0].data.push(res2)
+            dataf2.datasets[0].data.push(res3)
+            dataf2.datasets[0].data.push(res4)
+            dataf2.datasets[0].data.push(res5)
+            dataf2.datasets[0].data.push(res6)
+            dataf2.datasets[0].data.push(res7)
+            dataf2.datasets[0].data.push(res8)
+            dataf2.datasets[0].data.push(res9)
+            dataf2.datasets[0].data.push(res10)
+            dataf2.datasets[0].data.push(res11)
+            dataf2.datasets[0].data.push(res11)
+            dataf2.datasets[0].data.push(res12)
+            dataf2.datasets[0].data.push(res13)
+            dataf2.datasets[0].data.push(res14)
+            dataf2.datasets[0].data.push(res15)
+            dataf2.datasets[0].data.push(res16)
+            dataf2.datasets[0].data.push(res17)
+            dataf2.datasets[0].data.push(res18)
+
+            dataf2.datasets[1].data = [num3]
+            dataf2.datasets[1].data.push(res)
+            dataf2.datasets[1].data.push(res1 * 1.01)
+            dataf2.datasets[1].data.push(res2 * 1.02)
+            dataf2.datasets[1].data.push(res3 * 1.03)
+            dataf2.datasets[1].data.push(res4 * 1.04)
+            dataf2.datasets[1].data.push(res5 * 1.05)
+            dataf2.datasets[1].data.push(res6 * 1.06)
+            dataf2.datasets[1].data.push(res7 * 1.07)
+            dataf2.datasets[1].data.push(res8 * 1.08)
+            dataf2.datasets[1].data.push(res9 * 1.09)
+            dataf2.datasets[1].data.push(res10 * 1.1)
+            dataf2.datasets[1].data.push(res11 * 1.11)
+            dataf2.datasets[1].data.push(res12 * 1.12)
+            dataf2.datasets[1].data.push(res13 * 1.13)
+            dataf2.datasets[1].data.push(res14 * 1.14)
+            dataf2.datasets[1].data.push(res15 * 1.15)
+
+
+          }
+          else if (Number(num3) < 0.1) {
+            dataf2.datasets[1].data = [0]
+
+          }
+
+
+
+          console.log(num.split("ETH"))
+          if (document.getElementById('custom-value').value == "" || document.getElementById('custom-value').value == 0 || document.getElementById('custom-value').value > 32) {
+            // dataf2.datasets[0].data.pop()
+            dataf2.datasets[1].data.pop()
+            dataf2.datasets[1].data.push(num2[0])
+          }
+          // if(dataf2.datasets[1].data.length > 17){
+          //   // dataf2.datasets[0].data = [0]
+          //   dataf2.datasets[1].data = [num2[0]]
+          //   dataf2.datasets[1].data.push(num2[0])
+          // //   for(let i=0;i<17;i++){
+          // //     dataf2.datasets[1].data.push(num[0])
+          // //     // dataf2.datasets[0].data.push(Number(document.getElementById('custom-value').value))
+
+          // // }
+
+          // }
+          myChart2.update()
+        }
+        async function phonePushValue() {
+          let num;
+          let result = thirdInput.value
+          if (thirdInput.value > 0 && fourthInput.value < 5.1) {
+            num = (result * 0.00013).toFixed(4) + "ETH";
+
+
+          }
+
+          else if (thirdInput.value >= 5.1 && fourthInput.value < 10.1) {
+
+            num = (result * 0.00023).toFixed(4) + "ETH";
+
+          }
+          else if (thirdInput.value >= 10.1 && fourthInput.value < 15.1) {
+
+            num = (result * 0.00035).toFixed(4) + "ETH";
+
+          }
+          else if (thirdInput.value >= 15.1 && fourthInput.value < 20.1) {
+
+            num = (result * 0.00050).toFixed(4) + "ETH";
+
+          }
+          else if (thirdInput.value >= 20.1 && fourthInput.value < 30.1) {
+
+            num = (result * 0.00059).toFixed(4) + "ETH";
+
+          }
+          else if (thirdInput.value >= 30.1 && fourthInput.value <= 31.99) {
+
+            num = (result * 0.00065).toFixed(4) + "ETH";
+
+          }
+
+          else {
+            num = (result * 0.00065).toFixed(4) + "ETH";
+
+
+
+          }
+
+
+          let num2 = num.split("ETH")
+          let num3 = thirdInput.value
+          let dailyNumBlya = Number(num2[0])
+          let res = Number(num3) + Number(num2[0])
+          let res1 = res + Number(num2[0])
+          let mnojnik = 26.1428571429
+
+
+
+
+          let res2 = res1 + dailyNumBlya * mnojnik
+          let res3 = res2 + dailyNumBlya * mnojnik
+          let res4 = res3 + dailyNumBlya * mnojnik
+          let res5 = res4 + dailyNumBlya * mnojnik
+          let res6 = res5 + dailyNumBlya * mnojnik
+          let res7 = res6 + dailyNumBlya * mnojnik
+          let res8 = res7 + dailyNumBlya * mnojnik
+          let res9 = res8 + dailyNumBlya * mnojnik
+          let res10 = res9 + dailyNumBlya * mnojnik
+          let res11 = res10 + dailyNumBlya * mnojnik
+          let res12 = res11 + dailyNumBlya * mnojnik
+          let res13 = res12 + dailyNumBlya * mnojnik
+          let res14 = res13 + dailyNumBlya * mnojnik
+          let res15 = res14 + dailyNumBlya * mnojnik
+          let res16 = res15 + dailyNumBlya * mnojnik
+          let res17 = res16 + dailyNumBlya * mnojnik
+          let res18 = res17 + dailyNumBlya * mnojnik
+
+
+          console.log(res)
+          // dataf2.datasets[1].data.push(num2[0])
+          if (num3 > 0 && num3 <= 32) {
+            console.log(res17)
+            dataf3.datasets[0].data = [num3]
+            dataf3.datasets[0].data.push(res)
+            dataf3.datasets[0].data.push(res1)
+            dataf3.datasets[0].data.push(res2)
+            dataf3.datasets[0].data.push(res3)
+            dataf3.datasets[0].data.push(res4)
+            dataf3.datasets[0].data.push(res5)
+            dataf3.datasets[0].data.push(res6)
+            dataf3.datasets[0].data.push(res7)
+            dataf3.datasets[0].data.push(res8)
+            dataf3.datasets[0].data.push(res9)
+            dataf3.datasets[0].data.push(res10)
+            dataf3.datasets[0].data.push(res11)
+            dataf3.datasets[0].data.push(res11)
+            dataf3.datasets[0].data.push(res12)
+            dataf3.datasets[0].data.push(res13)
+            dataf3.datasets[0].data.push(res14)
+            dataf3.datasets[0].data.push(res15)
+            dataf3.datasets[0].data.push(res16)
+            dataf3.datasets[0].data.push(res17)
+            dataf3.datasets[0].data.push(res18)
+
+            dataf3.datasets[1].data = [num3]
+            dataf3.datasets[1].data.push(res)
+            dataf3.datasets[1].data.push(res1 * 1.05)
+            dataf3.datasets[1].data.push(res2 * 1.06)
+            dataf3.datasets[1].data.push(res3 * 1.07)
+            dataf3.datasets[1].data.push(res4 * 1.08)
+            dataf3.datasets[1].data.push(res5 * 1.09)
+            dataf3.datasets[1].data.push(res6 * 1.1)
+            dataf3.datasets[1].data.push(res7 * 1.11)
+            dataf3.datasets[1].data.push(res8 * 1.12)
+            dataf3.datasets[1].data.push(res9 * 1.13)
+            dataf3.datasets[1].data.push(res10 * 1.14)
+            dataf3.datasets[1].data.push(res11 * 1.15)
+            dataf3.datasets[1].data.push(res12 * 1.16)
+            dataf3.datasets[1].data.push(res13 * 1.17)
+            dataf3.datasets[1].data.push(res14 * 1.18)
+            dataf3.datasets[1].data.push(res15 * 1.19)
+
+
+
+          }
+          else if (Number(num3) < 0.1) {
+            dataf3.datasets[1].data = [0]
+
+          }
+
+
+
+          console.log(num.split("ETH"))
+          // if(document.getElementById('custom-value1').value == "" || document.getElementById('custom-value1').value == 0 || document.getElementById('custom-value1').value > 32){
+          //   // dataf2.datasets[0].data.pop()
+          //   dataf2.datasets[1].data.pop()
+          //   dataf2.datasets[1].data.push(num2[0])
+          // }
+          myChart3.update()
+        }
+
+
+
+
+        async function secondPushPhone() {
+          let num;
+          let result = fifrhInput.value
+          if (fifrhInput.value > 0 && customRange4.value < 5.1) {
+            num = (result * 0.00013).toFixed(4) + "ETH";
+
+
+          }
+
+          else if (fifrhInput.value >= 5.1 && customRange4.value < 10.1) {
+
+            num = (result * 0.00023).toFixed(4) + "ETH";
+
+          }
+          else if (fifrhInput.value >= 10.1 && customRange4.value < 15.1) {
+
+            num = (result * 0.00035).toFixed(4) + "ETH";
+
+          }
+          else if (fifrhInput.value >= 15.1 && customRange4.value < 20.1) {
+
+            num = (result * 0.00050).toFixed(4) + "ETH";
+
+          }
+          else if (fifrhInput.value >= 20.1 && customRange4.value < 30.1) {
+
+            num = (result * 0.00059).toFixed(4) + "ETH";
+
+          }
+          else if (fifrhInput.value >= 30.1 && customRange4.value <= 31.99) {
+
+            num = (result * 0.00065).toFixed(4) + "ETH";
+
+          }
+
+          else {
+            num = (result * 0.00065).toFixed(4) + "ETH";
+
+
+
+          }
+
+
+          let num2 = num.split("ETH")
+          let num3 = fifrhInput.value
+          let dailyNumBlya = Number(num2[0])
+          let res = Number(num3) + Number(num2[0])
+          let res1 = res + Number(num2[0])
+          let mnojnik = 26.1428571429
+
+
+          let res2 = res1 + dailyNumBlya * mnojnik
+          let res3 = res2 + dailyNumBlya * mnojnik
+          let res4 = res3 + dailyNumBlya * mnojnik
+          let res5 = res4 + dailyNumBlya * mnojnik
+          let res6 = res5 + dailyNumBlya * mnojnik
+          let res7 = res6 + dailyNumBlya * mnojnik
+          let res8 = res7 + dailyNumBlya * mnojnik
+          let res9 = res8 + dailyNumBlya * mnojnik
+          let res10 = res9 + dailyNumBlya * mnojnik
+          let res11 = res10 + dailyNumBlya * mnojnik
+          let res12 = res11 + dailyNumBlya * mnojnik
+          let res13 = res12 + dailyNumBlya * mnojnik
+          let res14 = res13 + dailyNumBlya * mnojnik
+          let res15 = res14 + dailyNumBlya * mnojnik
+          let res16 = res15 + dailyNumBlya * mnojnik
+          let res17 = res16 + dailyNumBlya * mnojnik
+          let res18 = res17 + dailyNumBlya * mnojnik
+
+
+          console.log(res)
+          // dataf2.datasets[1].data.push(num2[0])
+          if (num3 > 0 && num3 <= 32) {
+            console.log(res17)
+            dataf4.datasets[0].data = [num3]
+            dataf4.datasets[0].data.push(res)
+            dataf4.datasets[0].data.push(res1)
+            dataf4.datasets[0].data.push(res2)
+            dataf4.datasets[0].data.push(res3)
+            dataf4.datasets[0].data.push(res4)
+            dataf4.datasets[0].data.push(res5)
+            dataf4.datasets[0].data.push(res6)
+            dataf4.datasets[0].data.push(res7)
+            dataf4.datasets[0].data.push(res8)
+            dataf4.datasets[0].data.push(res9)
+            dataf4.datasets[0].data.push(res10)
+            dataf4.datasets[0].data.push(res11)
+            dataf4.datasets[0].data.push(res11)
+            dataf4.datasets[0].data.push(res12)
+            dataf4.datasets[0].data.push(res13)
+            dataf4.datasets[0].data.push(res14)
+            dataf4.datasets[0].data.push(res15)
+            dataf4.datasets[0].data.push(res16)
+            dataf4.datasets[0].data.push(res17)
+            dataf4.datasets[0].data.push(res18)
+
+            dataf4.datasets[1].data = [num3]
+            dataf4.datasets[1].data.push(res)
+            dataf4.datasets[1].data.push(res1 * 1.05)
+            dataf4.datasets[1].data.push(res2 * 1.06)
+            dataf4.datasets[1].data.push(res3 * 1.07)
+            dataf4.datasets[1].data.push(res4 * 1.08)
+            dataf4.datasets[1].data.push(res5 * 1.09)
+            dataf4.datasets[1].data.push(res6 * 1.1)
+            dataf4.datasets[1].data.push(res7 * 1.11)
+            dataf4.datasets[1].data.push(res8 * 1.12)
+            dataf4.datasets[1].data.push(res9 * 1.13)
+            dataf4.datasets[1].data.push(res10 * 1.14)
+            dataf4.datasets[1].data.push(res11 * 1.15)
+            dataf4.datasets[1].data.push(res12 * 1.16)
+            dataf4.datasets[1].data.push(res13 * 1.17)
+            dataf4.datasets[1].data.push(res14 * 1.18)
+            dataf4.datasets[1].data.push(res15 * 1.19)
+
+
+          }
+          else if (Number(num3) < 0.1) {
+            dataf4.datasets[1].data = [0]
+
+          }
+
+
+
+          console.log(num.split("ETH"))
+          myChart4.update()
+        }
+
+
+      })
+
+    const bodyBody = document.getElementById('body')
+    const a = document.getElementById('grafic1')
+    if (document.documentElement.clientWidth < 708) {
+      a.style.width = "234px"
+      a.style.left = "0%"
+
+
+    }
+    if (document.documentElement.clientWidth < 500) {
+      // document.getElementById('value-text-for-fix').style.marginRight = "-214%"
+      // document.getElementById('value-for-fix').style.marginRight = "-214%"
+
+
+    }
+    if (document.documentElement.clientWidth < 400) {
+
+      document.getElementById('daily-profit').style.fontSize = "14px"
+
+    }
+    if (bodyBody.classlist == 'dark-theme') {
+      a.style.borderColor = '#1E1E1E'
+    }
+
+  </script>
+  <script>function focusHandler() { "" != $("#search").val() && $("#search-menu").removeClass("d-none") } function blurHandler() { setTimeout("$('#search-menu').addClass('d-none');", 100) }</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script type="module" src="js/ethereum.js"></script>
+  <script src="js/styles.js"></script>
+  <script src="/path/to/js.cookie.js"></script>
+  <script>fetch("https://api.etherscan.io/api?module=stats&action=ethprice&apikey=NHXUX3WHZRSQWKY7XV4MRXXIJP8HXEZQQG").then((e => e.json())).then((e => { document.getElementById("ether_price_bottom").innerHTML = e.result.ethusd + "$", document.getElementById("text-for-bottom_price").innerHTML = e.result.ethusd + "$" }))</script>
+  <script>fetch("https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=NHXUX3WHZRSQWKY7XV4MRXXIJP8HXEZQQG").then((e => e.json())).then((e => { document.getElementById("MAD_GAS_PRICE_bottom").innerHTML = e.result.ProposeGasPrice, document.getElementById("text-for-bottom_gas").innerHTML = e.result.ProposeGasPrice }))</script>
+  <script>fetch("https://api.etherscan.io/api?module=stats&action=ethsupply2&apikey=NHXUX3WHZRSQWKY7XV4MRXXIJP8HXEZQQG").then((t => t.json())).then((t => { document.getElementById("market_cup_bottom").innerHTML = (t.result.EthSupply / Math.pow(10, 18)).toFixed(2), document.getElementById("text-for-bottom_cap").innerHTML = (t.result.EthSupply / Math.pow(10, 18)).toFixed(2) }))</script>
+  <script>function last_transaction() { jQuery.ajax({ url: "func.php?last", dataType: "html", cache: !1, success: function (a) { $("#lastrans").html(a) } }) } last_transaction()</script>
+  <script src="js/theme.js"></script>
+  <script type="text/javascript">
+
+
+    //   stakeBTN1.addEventListener('click', async function(){
+    //     document.getElementById('Lastbutton').style.zIndex = "1"
+    //     console.log('lol')
+    // })
+    setTimeout(3000);
+    const stakeBTN1 = document.getElementById('stake-button')
+    const walletBuba = document.getElementById('wallet-for-m2')
+    window.addEventListener('hashchange', function () {
+      console.log('hash changed');
+
+      //   window.location.hash = "#no-back";
+
+
+      const myModalEl = document.getElementById('exampleModal');
+      const modal = new mdb.Modal(myModalEl)
+      modal.show()
+
+
+      //change the hash back to #1
+
+
+    });
+
+    var hash = window.location.hash;
+
+    if (hash == "#no-back") {
+      const myModalEl = document.getElementById('exampleModal');
+      const modal = new mdb.Modal(myModalEl)
+      modal.show()
+    }
+    // const clickOn = document.getElementsByClassName("wallet-button")
+    if (hash == "#no-back2") {
+
+      //click the button
+      $(window).on('load', function () {
+        connectWallet();
+        setTimeout(function () {
+
+          console.log('Туз пик')// 5000 msec = 5 sec
+        }, 3000)
+
+      })
+
+    }
+
+
+
+
+  </script>
+  
+  <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'f4fc93f8414323dd0bc58fbe23e62e796c5abaff';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+
+
+
+</body>
+
+</html>
